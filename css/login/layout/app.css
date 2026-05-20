@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Inter';
+}
+.app-login {
+
+    height: 60%;
+    width: 50%;
+    background-color: #273c75;
+    border-radius: 20px;
+    padding: 44px;
+    display: flex;
+}
+.div-img-login {
+
+    height: 100%;
+    width: 50%;
+}

@@ -1,0 +1,124 @@
+
+
+.menor {
+
+    margin-top: 10px;
+    font-size: 12px;
+}
+.vertical {
+
+    flex-direction: column;
+}
+.amarelo{
+
+    color: #FFC107;;
+}
+.p-proposta-m {
+
+    color: #2F4B7C;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.espaco {
+
+    margin-top: 30px;
+}
+.underline {
+
+    width: 450px;
+    border: 0.5px solid #083f7a;
+    align-self: center;
+    border-width: 0.3px;
+}
+
+.center {
+
+    align-self: center;
+}
+
+.espaco {
+
+    gap: 20px;
+}
+
+.nomargin {
+
+    margin: 0;
+}
+
+.backgroundIMG {
+
+    padding: 44px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+.mover {
+    position: relative;
+    top: -290px;
+    right: 240px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 30;
+}
+.mover1 {
+    position: relative;
+    top: -310px;
+    right: -240px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+
+.p-problema {
+
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 220px;
+    right: -37px;
+        color: red;
+        font-weight: 700;
+        font-size: 22px;
+}
+
+.p-solucao {
+
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 195px;
+    left: 580px;
+    color: rgb(117, 230, 102);
+    font-weight: 700;
+    font-size: 22px;
+}
+.p-valorFinal {
+
+    position: relative; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 640px;
+    left: 573px;
+}
+.p-valorEconomia {
+
+    position: relative; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 915px;
+    left: 42.5%;
+}

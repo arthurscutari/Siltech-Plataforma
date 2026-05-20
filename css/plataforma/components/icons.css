@@ -1,0 +1,14 @@
+.icon {
+
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 700;
+}
+.user-icon {
+
+    padding: 10px;
+    background-color: #273c75;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}

@@ -1,0 +1,61 @@
+.pg {
+    height: 1173px;
+    width: 794px;
+    background-color: white;
+    box-sizing: border-box;
+     
+}
+.corpo {
+  
+    display: flex;
+    height: 90%;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 44px;
+    box-sizing: border-box;
+}
+.backgroundImg {
+
+   
+    background-image: url(../../../img/imgProposta/backgroungIMG.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+.pg-capa{
+    display: flex;
+}
+.capa {
+
+    height: 100%;
+    width: 50%;
+    padding: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+
+}
+.capa-2 {
+
+    height: 100%;
+    width: 50%;
+
+    
+    
+}
+
+.img-capa {
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.h1-capa {
+
+    font-size: 35px;
+    color: #083f7a;
+    line-height: 28px;
+    text-transform: uppercase;
+}

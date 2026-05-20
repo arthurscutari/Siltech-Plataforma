@@ -1,0 +1,26 @@
+.form-plataforma {
+ 
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  gap: 24px;
+  display: flex;
+}
+.form-proposta-plataforma{
+
+  width: 70%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+.resumo-proposta-plataforma {
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}

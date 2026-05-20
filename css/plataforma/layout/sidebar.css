@@ -1,0 +1,27 @@
+.app-sidebar-plataforma {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #273c75;
+    height: 100%;
+    width: 14%;
+}
+
+.sidebar-logo-plataforma {
+
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px solid rgba(194, 194, 194, 0.253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px;
+}
+
+.sidebar-title-plataforma{
+    display: flex;
+    flex: 1;    
+    flex-direction: column;
+    padding: 0 16px;
+}

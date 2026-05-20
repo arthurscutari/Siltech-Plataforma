@@ -1,0 +1,82 @@
+
+@import "base/global.css";
+@import "base/reset.css";
+
+@import "layout/app.css";
+@import "layout/nav.css";
+@import "layout/main.css";
+@import "layout/sidebar.css";
+
+
+@import "components/form.css";
+@import "components/card.css";
+@import "components/button.css";
+@import "components/inputs.css";
+@import "components/icons.css";
+
+@import "utilities/size.css";
+@import "utilities/animation.css";
+@import "utilities/fontes.css";
+@import "utilities/variaveis.css";
+
+
+
+
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* SWITCH */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 26px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .3s;  
+}
+
+input:checked + .slider {
+  background-color: #f4c542; /* seu amarelo */
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* escondido */
+.hidden {
+  display: none;
+}
+
+
+

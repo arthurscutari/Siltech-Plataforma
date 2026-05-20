@@ -1,0 +1,23 @@
+.nav-proposta{
+    display: flex;
+}
+.nav-dashboard{
+    display: flex;
+}
+.nav-historico{
+    display: flex;
+}
+.nav-banco{
+    display: flex;
+}
+.nav-config{
+    display: flex;
+}
+.nav-perfil{
+    display: flex;
+}
+
+.card-nav-plataforma:hover {
+
+    background-color: #243253;
+}

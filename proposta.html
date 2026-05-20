@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/proposta/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Proposta</title>
+</head>
+
+<body class="app-proposta">
+    <div class="div-enviar-dados">
+        <h2 class="h2-proposta">Atenção</h2> 
+        <p class="p-proposta">Revise as informações da proposta antes de gerar o PDF final.
+         Caso encontre alguma divergência, clique em “Voltar” para corrigir.</p>
+        <button class="btn-pdf-proposta">Gerar PDF</button>
+        <button class="btn-voltar-proposta" id="btn-voltar-proposta">Voltar</button>
+    </div>
+    <section class="proposta">
+        <section class="pg pg-capa">
+            <div class="capa">
+                <div class="container-capa">
+                    <img src="./img/Logo.png" alt="Logo proposta" height="55px" width="55px">
+                </div>
+                <div class="container-capa">
+                    <h1 class="h1-capa">Proposta Comercial</h1>
+                    <p class="p-proposta"><i>O sol brilha para todos.</i></p>
+                </div>
+                <div class="container-capa">
+                    <p class="p-proposta nomargin">@siltechsolar</p>
+                    <p class="p-proposta nomargin">(11) 97435-0700</p>
+                    <p class="p-proposta nomargin">www.siltechsolar.com.br</p>
+                </div>
+            </div>
+            <div class="capa-2">
+                <img src="./img/imgProposta/imgCAPA2.jpg" alt="Imagem capa" class="img-capa">
+            </div>
+        </section>
+        <section class="pg">
+            <div class="cabecalho">
+                <img src="/img/Logo.png" alt="Logo cabecalho">
+                <h1 class="titulo-cabecalho">PROPOSTA COMERCIAL</h1>
+                <p class="n-pagina">2</p>
+            </div>
+            <div class="corpo">
+                <span id="nome-proposta" class="p-proposta"><b>Kennedy,</b></span>
+                <span id="local-proposta" class="p-proposta">Mogi das Cruzes</span>
+                <h3 class="h3-proposta">DESCRIÇÃO GERAL </h3>
+                <p class="p-proposta">Projeto que visa a implementação de um sistema de geração fotovoltaico
+                    distribuído, a fim de gerar créditos energéticos os quais serão compensadas
+                    na fatura de energia elétrica, trazendo sustentabilidade e uma economia de
+                    até 95% no valor da fatura de energia elétrica.
+                </p>
+                <h3 class="h3-proposta">REQUISITOS DE IMPLEMENTAÇÃO:</h3>
+                <p class="p-proposta">Para a implementação do sistema, a limitação se dá pelo número de placas,
+                    no caso dimensionado, <b><span id="qtd-placa-proposta">15</span> placas</b>, os quais necessitam uma área de
+                    aproximadamente <b><span id="area-proposta">50</span> m²</b>.
+                </p>
+                <h3 class="h3-proposta">INSTALAÇÃO E HOMOLOGAÇÃO:</h3>
+                <p class="p-proposta">A proposta conta com o projeto elétrico e a instalação do sistema de
+                    geração distribuída. Para uma correta instalação há necessidade de
+                    avaliação e inspeção prévia, tendo um profissional responsável pelo projeto.
+                </p>
+                <p class="p-proposta">A homologação do sistema junto à concessionaria está contemplada,
+                    haverá orientações em relação aos procedimentos a serem tomados com
+                    a companhia elétrica.</p>
+            </div>
+        </section>
+        <section class="pg">
+            <div class="cabecalho">
+                <img src="/img/Logo.png" alt="Logo cabecalho">
+                <h1 class="titulo-cabecalho">COMO FUNCIONA O INVESTIMENTO</h1>
+                <p class="n-pagina">3</p>
+            </div>
+            <div class="corpo backgroundImg">
+                <p class="p-problema" id="problema-proposta">Problema</p>
+                <p  class="p-solucao" id="solucao-proposta">Solução</p>
+                <p class="p-valorFinal" id="valor-final-proposta">Valor Final</p>
+                 <p class="p-valorEconomia" id="valor-economia-proposta">Valor Economia</p>
+            </div>
+
+        </section>
+        <section class="pg">
+            <div class="cabecalho">
+                <img src="/img/Logo.png" alt="Logo cabecalho">
+                <h1 class="titulo-cabecalho">DIMENSIONAMENTO DO PROJETO</h1>
+                <p class="n-pagina">4</p>
+            </div>
+            <div class="corpo">
+                <p class="p-proposta">Considerando o perfil do cliente, e o previsto consumo médio, chegamos
+                    a um Kit de <b><span id="kit-proposta">9.15kWp</span></b>, o que equivale no cenário atual, uma redução de
+                    <b><span id="valor-reducao-proposta">R$ 985,40</span></b> na fatura de energia elétrica. O Kit de geração distribuída
+                    é composto por:
+                </p>
+                <p class="p-proposta">• <span id="inversor-proposta">01 inversor Huawei - 6kW;</span></p>
+                <p class="p-proposta">• <span id>15</span> módulos de 610Wp Tier 1;</p>
+                <p class="p-proposta">• Conectores MC4;</p>
+                <p class="p-proposta">• Estruturas de fixação para telha <span id="telhado-proposta">cerâmica;</span></p>
+                <p class="p-proposta">• Cabo solar especial.</p>
+
+                <p class="p-proposta-m">Sua conta <span style="color: red;"><b>SEM</b></span> Energia Solar: <span id="conta-sem-proposta">R$ 1.055,40</span>
+                </p>
+                <p class="p-proposta-m">Sua conta <span style="color: green;"><b>COM</b></span> Energia Solar Siltech:
+                    <span id="conta-con-proposta">R$ 70,00.</span></p>
+                <p class="p-proposta-m"><b>Energia gerada com o Sistema Solar Siltech:</b> <span class="amarelo" id="kwh-proposta"><b>977
+                            kWh</b></span></p>
+                <h1 class="h2-proposta espaco">CONDIÇÕES GERAIS DE FORNECIMENTO:</h1>
+                <div class="tabela">
+                    <div class="celula">
+                        <div class="celula-1">
+                            <p class="p-tabela">72x</p>
+                        </div>
+                        <div class="celula-2">
+                            <p class="p-tabela">Financiamento</p>
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="celula-1">
+                            <p class="p-tabela">60x</p>
+                        </div>
+                        <div class="celula-2">
+                            <p class="p-tabela">Financiamento</p>
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="celula-1">
+                            <p class="p-tabela">48x</p>
+                        </div>
+                        <div class="celula-2">
+                            <p class="p-tabela">Financiamento</p>
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="celula-1">
+                            <p class="p-tabela">10</p>
+                        </div>
+                        <div class="celula-2">
+                            <p class="p-tabela">Cartão de Crédito</p>
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="celula-1">
+                            <p class="p-tabela">Investimento</p>
+                        </div>
+                        <div class="celula-2">
+                            <p class="p-tabela" id="valor-total-proposta">R$ 6666666</p>
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="celula-1">
+                            <p class="p-tabela">Prazo de Entrega</p>
+                        </div>
+                        <div class="celula-2">
+                            <p class="p-tabela">Créditos sendo gerados em 90 (noventa) dias corridos,
+                                a contar do dia de fechamento do pedido.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="celula-1">
+                            <p class="p-tabela">Garantia</p>
+                        </div>
+                        <div class="celula-2 vertical">
+                            <p class="p-tabela">25 anos de garantia de performance para os módulos;
+                            </p>
+                            <p class="p-tabela">12 anos de garantia de fabricação para os módulos;</p>
+                            <p class="p-tabela">10 anos de garantia de fabricação para os inversores.</p>
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="celula-1">
+                            <p class="p-tabela">Validade da Proposta</p>
+                        </div>
+                        <div class="celula-2">
+                            <p class="p-tabela">10 (dez) dias corridos a partir da data de emissão da proposta
+                                comercial</p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <p class="p-proposta menor"> <b>Importante:</b> O valor da parcela é baseado em taxa média e depende de
+                    análise de crédito e
+                    cadastro. A conta com solar é estimativa, considerando apenas custo de disponibilidade e sem
+                    incluir impostos, encargos, fio B e iluminação pública, que variam conforme o consumo.</p>
+            </div>
+        </section>
+        <section class="pg">
+            <div class="cabecalho">
+                <img src="/img/Logo.png" alt="Logo cabecalho">
+                <h1 class="titulo-cabecalho">RETORNO DE INVESTIMENTO:</h1>
+                <p class="n-pagina">5</p>
+            </div>
+            <div class="corpo">
+                <p class="p-proposta">Neste caso, considerando a economia gerada pelo KIT solar, e aumento da fatura de
+                    energia elétrica em 10,00% a.a.,
+                    o RETORNO DO INVESTIMENTO (payback simples) se dá em 28 meses ou 2 anos e 4 meses, e após isso o
+                    valor da fatura que seria pago para a
+                    concessionária é lucro para o investidor, portanto em uma análise de 15 anos, teria um retorno de R$
+                    402.391,21, sendo a vida útil mínima das
+                    placas fotovoltaicas igual a 25 anos.
+                </p>
+                <img src="./img/imgProposta/retornoInvstimento.jpeg" alt="Imagem retorno investimento" height="350px"
+                    width="550px" style="align-self: center;">
+                <h1 class="h2-proposta">CICLO ANUAL DE GERAÇÃO:</h1>
+                <p class="p-proposta">A geração de energia solar não é constante todos os meses.
+                    Durante o <b>verão, a irradiação solar é mais intensa</b> e os dias são mais longos, o que aumenta a
+                    produção. Já no inverno, com dias mais curtos, menor ângulo de incidência do sol e maior presença de
+                    chuvas, a geração naturalmente diminui. Essa variação faz parte do comportamento normal do sistema e
+                    <b>deve ser avaliada sempre na média anual, que é o que garante
+                        a economia real e consistente na sua conta de luz.</b></p>
+                <img src="./img/imgProposta/variacaoMensal.jpeg" alt="Imagem variação mensal" height="350px"
+                    width="550px" style="align-self: center;">
+            </div>
+        </section>
+        <section class="pg">
+            <div class="cabecalho">
+                <img src="/img/Logo.png" alt="Logo cabecalho">
+                <h1 class="titulo-cabecalho">CONSIDERAÇÕES FINAIS</h1>
+                <p class="n-pagina">6</p>
+            </div>
+            <div class="corpo espaco">
+                <p class="p-proposta">O sistema ora proposto foi dimensionado mediante a uma estimativa de consumo,
+                    entretanto o kit é passível de expansão
+                    e adaptável às necessidades específicas do perfil do cliente.</p>
+                <p class="p-proposta">Atenciosamente,</p>
+                <p class="underline"></p>
+                <p class="p-proposta center">Nome</p>
+                <p class="underline"></p>
+                <p class="p-proposta center">Siltech Energia Solar LTDA</p>
+                <p class="p-proposta center">Mogi das Cruzes - <span>SP, 27 de abril de 2026.</span></p>
+                <img src="./img/imgProposta/logoProposta.png" alt="Logo Siltech" height="44px" width="190px"
+                    class="center">
+                <p class="p-proposta center">www.siltechsolar.com.br</p>
+                <p class="p-proposta center">(11) 97435-0700</p>
+                <p class="p-proposta center">@siltechsolar</p>
+
+            </div>
+        </section>
+    </section>
+    <script src="/js/Proposta/jsProposta.js"></script>
+    <script src="/js/Proposta/CarregarDadosProposta.js"></script>
+</body>
+
+</html>

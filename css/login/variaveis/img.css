@@ -1,0 +1,11 @@
+.logo-login {
+
+    height: 50px;
+    width: 50px
+}
+.img-login {
+
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

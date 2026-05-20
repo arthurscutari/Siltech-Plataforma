@@ -1,0 +1,39 @@
+.campo, .selecao {
+
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 5px;
+  border:none;
+  border: 1px solid gray;
+  padding-left: 10px;
+}
+.checkbox {
+
+  background-color: yellow;
+  border-radius: 10px;
+  height: 20px;
+  width: 60px;
+}
+.lb {
+
+  display: flex;
+  font-size: 12px;
+  padding: 5px;
+  color: #2F4B7C;
+  font-weight: 500;
+}
+
+.show {
+
+  display: block;
+}
+.hidden {
+  display: none !important; 
+}
+
+.showInput {
+
+  display: flex !important;
+}

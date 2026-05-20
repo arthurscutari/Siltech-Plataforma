@@ -1,0 +1,193 @@
+<!Doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/plataforma/index.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=assignment" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Siltech</title>
+  </head>
+  <body>
+    <section class="app-plataforma">
+      <sidebar class="app-sidebar-plataforma">
+        <div class="sidebar-logo-plataforma">
+          <img src="img/Logo.png" alt="Logo siltech" height="50px"width="50px">
+          <div class="sidebar-title-plataforma">
+            <h3 class="h3-plataforma">Siltech</h3>
+            <p class="p-plataforma">Plataforma de Propostas</p>
+          </div>
+        </div>
+        <nav class="nav-sidebar-plataforma">
+          <div class="card-nav-plataforma nav-proposta">
+            <i class="bi bi-clipboard icon branco"></i>
+        <p class="p-nav-plataforma branco">Proposta</p>
+          </div>
+          <div class="card-nav-plataforma nav-proposta">
+            <i class="bi bi-clock-history icon branco"></i>
+         <p class="p-nav-plataforma branco">Hstórico</p>
+          </div>
+          <div class="card-nav-plataforma nav-proposta" id="btn-sair-plataforma">
+            <i class="bi bi-box-arrow-left icon branco"></i>
+         <p class="p-nav-plataforma branco">Sair</p>
+          </div>
+        </nav>
+      </sidebar>
+      <main class="main-plataforma">
+        <section class="section-proposta-plataforma">
+          <div class="cabecalho-plataforma">
+              <h2 class="h2-plataforma">Proposta Comercial</h2>
+              <div class="cabecalho-user"> 
+                <div class="cabecalho-user-text">
+                  <h3 class="h3-user">Arthur Alvarez</h3>
+                  <p class="p-user">Vendedor</p>
+                </div>
+               <i class="bi bi-person user-icon"></i>
+              </div>
+              
+          </div>
+          <div class="form-plataforma">
+            <form action="" class="form-proposta-plataforma">
+            <section class="card">
+              <h2 class="h2-plataforma-for">Cliente e Localização</h2>
+
+              <div class="campo-grupo">
+                <label class="lb">Nome</label>
+                <input type="text" class="campo" id="nome-proposta" placeholder="Digite seu nome"/>
+              </div>
+              <div class="campo-grupo">
+                <label class="lb">Celular</label>
+                <input type="text" class="campo" id="celular-proposta" placeholder="(xx) xxxx-xxxx"/>
+              </div>
+              <div class="campo-grupo">
+                <label class="lb">Canal de Vendas</label>
+                <select type="text" class="selecao" id="canal-proposta">
+                  <option value="Google">Google</option>
+                  <option value="Facebook">Facebook</option>
+                </select>
+              </div>
+              
+              <div class="grupo">
+                <label class="lb">Proposta teste</label>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="campo-grupo">
+                <label class="lb">Localização</label>
+                <input type="text" class="campo" id="input-cidade" placeholder="Digite a cidade">
+              </div>
+              <div class="input-group">
+                <label class="lb">Instalação</label>
+                <select type="text" class="selecao" id="instalacao-proposta">
+                  <option value="Bifásico">Bifásico</option>
+                  <option value="Trifásico">Trifásico</option>
+                </select>
+              </div>
+                 <div class="input-group">
+                <label class="lb">Tellhado</label>
+                <select type="text" class="selecao" id="telhado-proposta">
+                  <option value="Cerâmico">Cerâmico</option>
+                  <option value="Fibrocimento">Fibrocimento</option>
+                  <option value="Metalico">Metálico</option>
+                  <option value="Laje">Laje</option>
+                </select>
+              </div>
+            </section>
+             <section class="card">
+                <h2 class="h2-plataforma-for">Consumo</h2>
+
+              <div class="input-group">
+                <label class="lb">Consumo</label>
+                <select type="text" class="campo" id="consumo-form__proposta">
+                  <option value="0">Selecione o sistema</option>
+                  <option value="1">kWh</option>
+                  <option value="2">Placas</option>
+                </select>
+              </div>
+              <div class="input-group hidden" id="div-consumo-kwh">
+                <label class="lb" id="label-placas">kWh</label>
+                <input
+                  type="text"
+                  class="campo"
+                  id="consumo-kwh"
+                />
+              </div>
+              <div class="input-group hidden" id="div-consumo-placa">
+                <label class="lb" id="label-placas">Placas</label>
+                <input
+                  type="text"
+                  class="campo"
+                  id="consumo-placa"
+                />
+              </div>
+              <div class="input-group">
+                <label class="lb">Valor kWh</label>
+                    <input type="text" name="" id="valor-kwh-proposta" class="campo">
+              </div>
+              <div class="grupo">
+                <label class="label lb">Expansão de Placas</label>
+                <label class="switch">
+                  <input type="checkbox" id="expansao" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="input-group hidden" id="div-input-expansao">
+                <label class="lb">Quantidade de Placas</label>
+                <input
+                  type="text"
+                  class="campo"
+                  id="qtd-expansao-form__proposta"
+                />
+              </div>
+              
+            </section> 
+            <section class="card">
+              <h2>Sistema e Instalação</h2>
+              <div class="input-group">
+                <label class="lb">Módulo</label>
+                <select type="text" class="selecao" id="modulo-proposta">
+                  <option value="610Wp Tier 1">610Wp Tier 1</option>
+                </select>
+              </div>           
+              <div class="input-group">
+                <label class="lb">Tabela de Promoção</label>
+                <input type="text" class="campo" id="promocao-proposta" />
+              </div>
+              <button class="btn btn--primary" id="btn-gerar">
+                Gerar Proposta
+              </button>
+            </section> 
+            </form>
+            <div class="resumo-proposta-plataforma">
+              <h2 class="h2-plataforma-for">Resumo Proposta</h2>
+               <div class="input-group">
+                <label class="lb">Inversor</label>
+                <select type="text" class="selecao" id="inversor-proposta">
+                  <option value="String Ongrid">String Ongrid</option>
+                </select>
+              </div>
+              <div class="campo-grupo">
+                <label class="lb">HSP</label>
+                <p class="campo texto-proposta" id="input-hsp" ></p>
+              </div>
+                <div class="input-group">
+                <label class="lb">Quantidade de Placas</label>
+                <p class="campo" id="quantidade-placa-proposta">0</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/gerarHSP.js"></script>
+    <script src="js/scriptEnviarDados.js"></script>
+    <script src="js/scriptFormulario.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/plataforma/plataformaNavegacao.js"></script>
+  </body>
+</html>
