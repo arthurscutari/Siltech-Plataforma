@@ -1,11 +1,12 @@
 .botao-login-acessar {
 
     height: 44px;
-    width: 240px;
-    border-radius: 10px;
+    width: 260px;
+    border-radius: 5px;
     color: white;
     background-color:#273c75;
     border: none;
     font-weight: 700;
     cursor: pointer;
+    margin-top: 16px;
 }

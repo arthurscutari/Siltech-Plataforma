@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/login/indexLogin.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Plataforma - Siltech</title>
@@ -16,16 +17,21 @@
         </div>
         <form action="" class="form-login">
           <img src="img/Logo.png" alt="Logo Siltech" class="logo-login">
-            <h4 class="h4-login">SILTECH</h4>
-            <h5 class="h5-login">O sol brilha para todos</h5>
-            <p class="p-login">Preencha os campos com os dados corretamente</p>
+            <h1 class="h1-login">GESTÃO COMERCIAL SOLAR</h5>
+            <p class="p-login">Plataforma para criação, registro e gerenciamento de propostas</p>
               <div class="campo-login-grupo">
-                <label class="label-login">Login</label>
-                <input type="text" class="campo-login"/>
+                <label class="label-login" for="input-usuario-login">Login</label>
+                <div class="input-login">
+                  <i class="bi bi-person icon-input-login"></i>
+                  <input id="input-usuario-login" type="text" class="campo-login" placeholder="Digite seu login"/>               
+                </div>
               </div>
               <div class="campo-login-grupo">
-                <label class="label-login">Senha</label>
-                <input type="text" class="campo-login"/>
+                <label class="label-login" for="input-senha-login">Senha</label>
+                <div class="input-login">
+                  <i class="bi bi-lock icon-input-login"></i>
+                  <input id="input-senha-login"type="text" class="campo-login" placeholder="Digite sua senha"/>               
+                </div>
               </div>
               <button id="btn-acessar" class="botao-login-acessar">Acessar</button>
         </form>

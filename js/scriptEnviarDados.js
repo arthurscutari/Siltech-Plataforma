@@ -1,16 +1,25 @@
 
 const enviarDados = document.getElementById('btn-gerar');
 
-//Espaço custos do projeto - Simulando Proposta
-const inversor = "1 6kw"
-const retorno = 550
-const nome = "Arthur"
-const quantidadePlacas = 10
-const localizacao = "São Paulo"
-const instalacaoProposta = "Bifásico"
-const telhadoProposta = "Fibrocimento"
-const valorKwh = 0.95
-const hpsProposta = 4.45
+//Espaço para Variavels de campo.
+const nomePlataforma = "Arthur"
+const celularPlataforma = "11997050620"
+const canalVendaPlataforma = "Google"
+const propostaTestePlataforma = "Sim"
+const localizacaoPlataforma = "São Paulo"
+const instalacaoPlataforma = "Bifásico"
+const telhadoPlataforma = "Fibrocimento"
+const inversorPlataforma = "1x 6kw"
+const promocaoPlataforma = 0
+const consumoKwhPlataforma = "700"
+const quantidadePlacasPlataforma = 10
+const expansaoPlacasPlataforma = 0
+const moduloPlataforma = "610Wp Tier 1"
+const hspPlataforma = "4.45"
+const kwhPlataforma = "0.95"
+
+//
+
 const valorInstalacaoTipoFormulario = instalacaoTipo()
 const geracaoEnergia = parseFloat((hpsProposta) * 610 * 30 * 0.8/1000)
 const custoMercadoriaVendida = (custoEquipamento().valorTotal + estrutura() + homologacao() + instalacao() + retorno ) - 884

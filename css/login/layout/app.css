@@ -6,18 +6,20 @@ body {
     justify-content: center;
     overflow: hidden;
     font-family: 'Inter';
+    background-color: #273c75;
 }
 .app-login {
 
-    height: 60%;
+    height: 70%;
     width: 50%;
-    background-color: #273c75;
-    border-radius: 20px;
-    padding: 44px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 22px;
     display: flex;
 }
 .div-img-login {
 
-    height: 100%;
     width: 50%;
+    height: 100%;
+    border-radius: 10px;
 }
