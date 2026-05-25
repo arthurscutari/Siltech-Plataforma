@@ -12,22 +12,25 @@ const areaProposta = document.getElementById('area-proposta')
 const problemaProposta = document.getElementById('problema-proposta')
 const solucaoProposta = document.getElementById('solucao-proposta')
 const valorFinalProposta = document.getElementById('valor-final-proposta')
-const valorEconomiaProposta = "30000"
 const inversorProposta = document.getElementById('inversor-proposta')
 const telhadoProposta = document.getElementById('telhado-proposta')
 const contaSemProposta = document.getElementById('conta-sem-proposta')
 const contaComProposta = document.getElementById('conta-com-proposta')
 const invenstimentoTabela = document.getElementById('valor-total-proposta')
-
+const moduloProposta = document.getElementById('modulo-proposta')
+const energiaGeradaProposta = document.getElementById('energia-proposta')
+const valorReducao = document.getElementById('valor-reducao-proposta')
+const valorEconomiaProposta = document.getElementById('valor-economia-proposta')
 nomeProposta.textContent = proposta.nome
-localProposta.textContent = proposta.local
+localProposta.textContent = proposta.localizacao + " - SP"
 qtdPlacaProposta.textContent = proposta.placas
-areaProposta.textContent = proposta.area
-problemaProposta.textContent = proposta.problema.toLocaleString('pt-BR', {
+areaProposta.textContent = proposta.area 
+moduloProposta.textContent = proposta.modulo
+problemaProposta.textContent = proposta.valorSemSiltech.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'
 });
-solucaoProposta.textContent = proposta.reducao.toLocaleString('pt-BR', {
+solucaoProposta.textContent = proposta.valorComSiltech.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'
 });
@@ -37,11 +40,11 @@ valorFinalProposta.textContent = proposta.valorFinal.toLocaleString('pt-BR', {
 });
 inversorProposta.textContent = proposta.inversor
 telhadoProposta.textContent = proposta.telhado
-contaSemProposta.textContent = proposta.problema.toLocaleString('pt-BR', {
+contaSemProposta.textContent = proposta.valorSemSiltech.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'
 });
-contaComProposta.textContent = solucaoProposta.textContent = proposta.reducao.toLocaleString('pt-BR', {
+contaComProposta.textContent = solucaoProposta.textContent = proposta.valorComSiltech.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'
 });
@@ -50,3 +53,11 @@ invenstimentoTabela.textContent = proposta.valorFinal.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'
 });
+energiaGeradaProposta.textContent = proposta.energiaGerada
+valorReducao.textContent =  (proposta.valorSemSiltech - proposta.valorComSiltech ).toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+});
+
+valorEconomiaProposta.textContent = "LUCRO DE  " + proposta.economia.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'
+})+ " EM 15 ANOS" ;

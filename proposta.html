@@ -15,14 +15,14 @@
 </head>
 
 <body class="app-proposta">
-    <div class="div-enviar-dados">
+    <div class="div-enviar-dados" id="container-enviar">
         <h2 class="h2-proposta">Atenção</h2> 
         <p class="p-proposta">Revise as informações da proposta antes de gerar o PDF final.
          Caso encontre alguma divergência, clique em “Voltar” para corrigir.</p>
-        <button class="btn-pdf-proposta">Gerar PDF</button>
+        <button class="btn-pdf-proposta" id="btn-baixar-proposta">Baixar PDF</button>
         <button class="btn-voltar-proposta" id="btn-voltar-proposta">Voltar</button>
     </div>
-    <section class="proposta">
+    <section class="proposta" id="proposta-pdf">
         <section class="pg pg-capa">
             <div class="capa">
                 <div class="container-capa">
@@ -49,7 +49,7 @@
                 <p class="n-pagina">2</p>
             </div>
             <div class="corpo">
-                <span id="nome-proposta" class="p-proposta"><b>Kennedy,</b></span>
+                <span id="nome-proposta" class="p-proposta bold" style="padding: 0; margin: 0;"><b>Kennedy,</b></span>
                 <span id="local-proposta" class="p-proposta">Mogi das Cruzes</span>
                 <h3 class="h3-proposta">DESCRIÇÃO GERAL </h3>
                 <p class="p-proposta">Projeto que visa a implementação de um sistema de geração fotovoltaico
@@ -78,11 +78,14 @@
                 <h1 class="titulo-cabecalho">COMO FUNCIONA O INVESTIMENTO</h1>
                 <p class="n-pagina">3</p>
             </div>
-            <div class="corpo backgroundImg">
-                <p class="p-problema" id="problema-proposta">Problema</p>
-                <p  class="p-solucao" id="solucao-proposta">Solução</p>
-                <p class="p-valorFinal" id="valor-final-proposta">Valor Final</p>
-                <p class="p-valorEconomia" id="valor-economia-proposta">Valor Economia</p>
+            <div class="corpo">
+                <img src="img/imgProposta/backgroungIMG.png" class="img-background" alt="Background imagem">
+                <div class="valores-pg">
+                    <p class="p-problema" id="problema-proposta">Problema</p>
+                    <p  class="p-solucao" id="solucao-proposta">Solução</p>
+                    <p class="p-valorFinal" id="valor-final-proposta">Valor Final</p>
+                    <p class="p-valorEconomia" id="valor-economia-proposta">Valor Economia</p>
+                </div>
             </div>
 
         </section>
@@ -99,16 +102,16 @@
                     é composto por:
                 </p>
                 <p class="p-proposta">• <span id="inversor-proposta">01 inversor Huawei - 6kW;</span></p>
-                <p class="p-proposta">• <span id>15</span> módulos de 610Wp Tier 1;</p>
+                <p class="p-proposta">• <span id>15</span> módulos de <span id="modulo-proposta">610Wp Tier 1</span>;</p>
                 <p class="p-proposta">• Conectores MC4;</p>
-                <p class="p-proposta">• Estruturas de fixação para telha <span id="telhado-proposta">cerâmica;</span></p>
+                <p class="p-proposta">• Estruturas de fixação para telhado do tipo <b><span id="telhado-proposta">cerâmica;</span></p></b>
                 <p class="p-proposta">• Cabo solar especial.</p>
 
                 <p class="p-proposta-m">Sua conta <span style="color: red;"><b>SEM</b></span> Energia Solar: <span id="conta-sem-proposta"></span>
                 </p>
                 <p class="p-proposta-m">Sua conta <span style="color: green;"><b>COM</b></span> Energia Solar Siltech:
                     <span id="conta-com-proposta"></span></p>
-                <p class="p-proposta-m"><b>Energia gerada com o Sistema Solar Siltech:</b> <span class="amarelo" id="kwh-proposta"><b>977
+                <p class="p-proposta-m"><b>Energia gerada com o Sistema Solar Siltech:</b> <span class="amarelo" id="energia-proposta"><b>977
                             kWh</b></span></p>
                 <h1 class="h2-proposta espaco">CONDIÇÕES GERAIS DE FORNECIMENTO:</h1>
             <section class="section-tabela">
@@ -259,8 +262,10 @@
             </div>
         </section>
     </section>
-    <script src="/js/Proposta/jsProposta.js"></script>
-    <script src="/js/Proposta/CarregarDadosProposta.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/Proposta/jsProposta.js"></script>
+    <script src="js/Proposta/gerarPDF.js"></script>
+    <script src="js/Proposta/CarregarDadosProposta.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,14 @@
 .branco {
     color: white;
 }
+.border-branco {
+
+    border: 1px solid white
+}
+.amarelo{
+    background-color: #ffb200;
+}
+.esconder {
+
+    display: none;
+}

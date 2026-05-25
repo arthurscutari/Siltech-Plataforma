@@ -30,12 +30,15 @@
                 <label class="label-login" for="input-senha-login">Senha</label>
                 <div class="input-login">
                   <i class="bi bi-lock icon-input-login"></i>
-                  <input id="input-senha-login"type="text" class="campo-login" placeholder="Digite sua senha"/>               
+                  <input id="input-senha-login"type="password" class="campo-login" placeholder="Digite sua senha"/>               
+                  <i class="bi bi-eye-slash icon-input-login" id="mostrar-senha" style="cursor: pointer;"></i>
                 </div>
               </div>
+              <p class="p-error apagar" id="p-error">Usuário ou senha invalidos</p>
               <button id="btn-acessar" class="botao-login-acessar">Acessar</button>
         </form>
     </section>
-    <script src="js/index.js"></script>
+    <script src="js/Index/login.js"></script>
+    <script src="js/Index/index.js"></script>
 </body>
 </html>

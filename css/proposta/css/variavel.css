@@ -87,8 +87,8 @@
     justify-content: center;
     margin: 0;
     padding: 0;
-    top: 212px;
-    right: 10px;
+    top: 200px;
+    right: -10px;
     color: red;
     font-weight: 700;
     font-size: 22px;
@@ -106,8 +106,8 @@
     position: relative;
     margin: 0;
     padding: 0;
-    top: 155px;
-    left: 505px;
+    top: 148px;
+    left: 503px;
     color: rgb(117, 230, 102);
     font-weight: 700;
     font-size: 22px;
@@ -123,8 +123,8 @@
     display: flex;
     margin: 0;
     padding: 0;
-    top: 560px;
-    left: 505px;
+    top: 530px;
+    left: 500px;
     color: #083f7a;
     font-weight: 700;
     font-size: 20px;
@@ -144,9 +144,19 @@
     justify-content: center;
     margin: 0;
     padding: 0;
-    top: 802px;
+    top: 770px;
     border: 2px solid #083f7a;
     width: 100%;
     height: 40px;
     border-radius: 5px;
+    font-weight: 700;
+    color: #083f7a;
+
+}
+
+.hidden {
+    display: none;
+}
+.bold {
+    font-weight: 700;
 }

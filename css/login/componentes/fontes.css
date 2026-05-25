@@ -15,3 +15,19 @@
     padding: 0;
     margin: 10px 0;
 }
+.p-error {
+
+    color: #e74c3c;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.apagar {
+
+    display: none;
+}

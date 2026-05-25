@@ -31,18 +31,15 @@
 }
 .resumo-conteudo {
 
-  background-color: blue;
   height: auto;
   width: 100%;
   display: flex;
 }
 .resumo-chave {
   width: 50%;
-  background-color: red;
 }
 .resumo-valor {
   width: 50%;
-  background-color: green;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

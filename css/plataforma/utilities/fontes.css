@@ -51,3 +51,17 @@
   margin-bottom: 16px;
   color: #1f2a44;
 }
+
+.p-general {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-right: 10px;
+  color: #1f2a44;
+}

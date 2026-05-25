@@ -38,4 +38,30 @@
         border-left: 1px solid rgba(128, 128, 128, 0.219);
 
 }
+.resumo-chave p {
+
+    font-size: 14px;
+    padding: 2px;
+    color: gray;
+}
+.resumo-chave h4 {
+
+   font-size: 14px;
+    padding: 1px;
+    font-weight: 700;
+    color: #273c75
+}
+.resumo-valor p {
+
+    font-size: 14px;
+    padding: 2px;
+    color: black;
+}
+.resumo-valor h4 {
+
+    font-size: 14px;
+    padding: 1px;
+    color: #ffb200;
+    font-weight: 700;
+}
 

@@ -76,7 +76,7 @@
               <div class="grupo">
                 <label class="lb">Proposta teste</label>
                 <label class="switch">
-                  <input type="checkbox" />
+                  <input type="checkbox" id="teste-proposta" />
                   <span class="slider"></span>
                 </label>
               </div>
@@ -85,19 +85,18 @@
                 <input type="text" class="campo" id="input-cidade" placeholder="Digite a cidade">
               </div>
               <div class="input-group">
-                <label class="lb">Instalação</label>
-                <select type="text" class="selecao" id="instalacao-proposta">
-                  <option value="Bifásico">Bifásico</option>
-                  <option value="Trifásico">Trifásico</option>
+                <label class="lb">Módulo</label>
+                <select type="text" class="selecao" id="modulo-proposta">
+                  <option value="575Wp Tier 1">575Wp Tier 1</option>
+                  <option value="585Wp Tier 1">585Wp Tier 1</option>
+                  <option value="610Wp Tier 1">610Wp Tier 1</option>
+                  <option value="700Wp Tier 1">700Wp Tier 1</option>
                 </select>
-              </div>
-                 <div class="input-group">
-                <label class="lb">Tellhado</label>
-                <select type="text" class="selecao" id="telhado-proposta">
-                  <option value="Cerâmico">Cerâmico</option>
-                  <option value="Fibrocimento">Fibrocimento</option>
-                  <option value="Metalico">Metálico</option>
-                  <option value="Laje">Laje</option>
+              </div> 
+              <div class="input-group">
+                <label class="lb">Inversor</label>
+                <select type="text" class="selecao" id="inversor-proposta">
+                  <option value="String Ongrid">String Ongrid</option>
                 </select>
               </div>
               </div>
@@ -111,34 +110,32 @@
               <div class="card-3">
                 <h2 class="h2-plataforma-for">Consumo e Instalação</h2>
 
-              <div class="input-group">
-                <label class="lb">Consumo</label>
-                <select type="text" class="campo" id="consumo-form__proposta">
-                  <option value="0">Selecione o sistema</option>
-                  <option value="1">kWh</option>
-                  <option value="2">Placas</option>
-                </select>
-              </div>
-              <div class="input-group hidden" id="div-consumo-kwh">
-                <label class="lb" id="label-placas">kWh</label>
-                <input
-                  type="text"
-                  class="campo"
-                  id="consumo-kwh"
-                />
-              </div>
-              <div class="input-group hidden" id="div-consumo-placa">
-                <label class="lb" id="label-placas">Placas</label>
-                <input
-                  type="text"
-                  class="campo"
-                  id="consumo-placa"
-                />
-              </div>
-              <div class="input-group">
-                <label class="lb">Valor kWh</label>
-                    <input type="text" name="" id="valor-kwh-proposta" class="campo">
-              </div>
+                 
+                <div class="input-group">
+                  <label class="lb">Consumo</label>
+                  <select type="text" class="campo" id="consumo-proposta">
+                    <option value="0">Base de cálculo</option>
+                    <option value="1">kWh</option>
+                    <option value="2">Placas</option>
+                  </select>
+                </div>
+                <div class="input-group hidden" id="div-consumo-kwh">
+                  <label class="lb" id="label-placas">kWh</label>
+                  <input
+                    type="text"
+                    class="campo"
+                    id="consumo-kwh"
+                  />
+                </div>
+                <div class="input-group hidden" id="div-consumo-placa">
+                  <label class="lb" id="label-placas">Placas</label>
+                  <input
+                    type="text"
+                    class="campo"
+                    id="consumo-placa"
+                  />
+                </div>
+              
               <div class="grupo">
                 <label class="lb">Expansão de Placas</label>
                 <label class="switch">
@@ -151,32 +148,44 @@
                 <input
                   type="text"
                   class="campo"
-                  id="qtd-expansao-form__proposta"
+                  id="qtd-expansao-proposta"
                 />
               </div>
-              <div class="input-group">
-                <label class="lb">Módulo</label>
-                <select type="text" class="selecao" id="modulo-proposta">
-                  <option value="610Wp Tier 1">610Wp Tier 1</option>
-                </select>
-              </div>           
-              <div class="input-group">
-                <label class="lb">Inversor</label>
-                <select type="text" class="selecao" id="inversor-proposta">
-                  <option value="String Ongrid">String Ongrid</option>
-                </select>
-              </div>
               
+                      
+              
+              <div class="input-group">
+                <label class="lb">Preço kWh</label>
+                    <input type="text" name="" id="valor-kwh-proposta" class="campo">
               </div>
-              <div class="card-4">
-                <h2 class="h2-plataforma-for">Placas e HSP</h2>
+               <div class="input-group">
+                <label class="lb">Instalação</label>
+                <select type="text" class="selecao" id="instalacao-proposta">
+                  
+                  <option value="Bifásico">Bifásico</option>
+                  <option value="Trifásico">Trifásico</option>  
+                  
+                </select>
+              </div>
+                 <div class="input-group">
+                <label class="lb">Telhado</label>
+                <select type="text" class="selecao" id="telhado-proposta">
+                  <option value="Cerâmico">Cerâmico</option>
+                  <option value="Fibrocimento">Fibrocimento</option>
+                  <option value="Metalico">Metálico</option>
+                  <option value="Laje">Laje</option>
+                </select>
+              </div>
+              </div>
+              <div class="card-4" style="background-color: #273c75;">
+                <h2 class="h2-plataforma-for" style="color: #ffb200;">Placas e HSP</h2>
                 <div class="campo-grupo">
-                <label class="lb">HSP</label>
-                <p class="campo texto-proposta" id="input-hsp" ></p>
+                <label class="lb branco">HSP</label>
+                <p class="p-general border-branco branco" id="input-hsp" >0</p>
               </div>
                 <div class="input-group">
-                <label class="lb">Quantidade de Placas</label>
-                <p class="campo" id="quantidade-placa-proposta">0</p>
+                <label class="lb branco">Quantidade de Placas</label>
+                <p class="p-general border-branco branco" id="quantidade-placa-proposta">0</p>
               </div>
               </div>
             </div>
@@ -185,9 +194,9 @@
               <div class="resumo-conteudo">
                 <div class="resumo-chave">
                   <h4>Cliente</h4>
-                  <p>Nome</p>
+                  <p >Nome</p>
                   <p>Celular</p>
-                  <p>Canal de Vendas</p>
+                  <p >Canal de Vendas</p>
                   <p>Localização</p>
                   <p>Teste</p>
                   <p>Instalação</p>
@@ -201,6 +210,7 @@
                   <p>Hsp</p>
                   <p>kWh</p>
                   <h4>Valores</h4>
+                  <p>Promoção</p>
                   <p>Equipamento</p>
                   <p>Estrutura</p>
                   <p>Homologação</p>
@@ -213,35 +223,39 @@
                 </div>
                 <div class="resumo-valor">
                   <h4>Cliente</h4>
-                  <p>Nome</p>
-                  <p>Celular</p>
-                  <p>Canal de Vendas</p>
-                  <p>Localização</p>
-                  <p>Teste</p>
-                  <p>Instalação</p>
-                  <p>Telhado</p>
+                  <p id="nome-resumo">Nome</p>
+                  <p id="celular-resumo">Celular</p>
+                  <p id="canal-resumo">Google</p>
+                  <p id="localizacao-resumo">Localização</p>
+                  <p id="teste-resumo">Não</p>
+                  <p id="instalacao-resumo">Bifásico</p>
+                  <p id="telhado-resumo">Cerâmico</p>
                   <h4>Consumo</h4>
-                  <p>Area</p>
-                  <p>Modulo</p>
-                  <p>Inversor</p>
-                  <p>Expansão de Placas</p>
-                  <p>Quantidade de Placas</p>
-                  <p>Hsp</p>
-                  <p>kWh</p>
+                  <p id="area-resumo">Area</p>
+                  <p id="modulo-resumo">Modulo</p>
+                  <p id="inversor-resumo">Inversor</p>
+                  <p id="expansao-resumo">Expansão de Placas</p>
+                  <p id="placas-resumo">Quantidade de Placas</p>
+                  <p id="hsp-resumo">Hsp</p>
+                  <p id="kwh-resumo">kWh</p>
                   <h4>Valores</h4>
-                  <p>Equipamento</p>
-                  <p>Estrutura</p>
-                  <p>Homologação</p>
-                  <p>Retorno</p>
-                  <p>CMV</p>
-                  <p>Valor sem Siltech</p>
-                  <p>Valor com Siltech</p>
-                  <p>Economia Futura</p>
-                  <p>Valor Final</p>
+                  <p id="promocao-resumo">Promocao</p>
+                  <p id="equipamento-resumo">Equipamento</p>
+                  <p id="estrutura-resumo">Estrutura</p>
+                  <p id="homologacao-resumo">Homologação</p>
+                  <p id="retorno-resumo">Retorno</p>
+                  <p id="cmv-resumo">CMV</p>
+                  <p id="valor-sem-resumo">Valor sem Siltech</p>
+                  <p id="valor-com-resumo">Valor com Siltech</p>
+                  <p id="economia-resumo">Economia Futura</p>
+                  <p id="valor-final-resumo">Valor Final</p>
                 </div>
               </div>
-              <button class="btn btn--primary" id="btn-gerar">
+              <button class="botao amarelo" id="btn-confirmar-plataforma">
                 Gerar Proposta
+              </button>
+              <button class="botao esconder" id="btn-gerar-plataforma">
+                Gerar PDF
               </button>
                
             </div>
@@ -249,11 +263,12 @@
         </section>
       </main>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="js/gerarHSP.js"></script>
-    <script src="js/scriptEnviarDados.js"></script>
-    <script src="js/scriptFormulario.js"></script>
+    <script src="js/Plataforma/scriptFormulario.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/Plataforma/gerarHSP.js"></script>
+    <script src="js/Plataforma/scriptEnviarDados.js"></script>
     <script src="js/plataforma/plataformaNavegacao.js"></script>
+    <script src="js/Plataforma/validacoes.js"></script>
   </body>
 </html>

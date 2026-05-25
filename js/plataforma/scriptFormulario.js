@@ -1,6 +1,5 @@
-
-//Código para calcular mostrar inputs
-const escolhaConsumo = document.getElementById('consumo-form__proposta');
+//Código para mostrar inputs
+const escolhaConsumo = document.getElementById('consumo-proposta');
 const divPlacas = document.getElementById('div-consumo-placa')
 const divKwh = document.getElementById('div-consumo-kwh')
 
@@ -41,4 +40,6 @@ expansao.addEventListener("change", function () {
     }
 
 })
-    
+
+
+
