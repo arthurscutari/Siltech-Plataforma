@@ -4,7 +4,6 @@ const divPlacas = document.getElementById('div-consumo-placa')
 const divKwh = document.getElementById('div-consumo-kwh')
 
 
-
 escolhaConsumo.addEventListener('change', () =>{
 
 

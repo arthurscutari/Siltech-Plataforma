@@ -102,11 +102,14 @@ const hsp = document.getElementById('input-hsp')
 const confirmarProposta = document.getElementById('btn-confirmar-plataforma')
 const botaoGerarPdf = document.getElementById('btn-gerar-plataforma')
 confirmarProposta.addEventListener('click', gerarProposta)
+const colaboradorAtivo = document.getElementById('usuario-ativo')
 
 function gerarProposta() {
 
     const proposta = {
 
+        colaborador: colaboradorAtivo.textContent, 
+        data:Date(),
         nome:nomePlataforma.value,
         celular:celularPlataforma.value,
         canal:canalPlataforma.value,
@@ -138,6 +141,7 @@ function gerarProposta() {
     }
     localStorage.setItem('proposta', JSON.stringify(proposta))
 
+    
     nomeResumo.textContent = proposta.nome
     celularResumo.textContent = proposta.celular
     canalResumo.textContent = proposta.canal
@@ -189,6 +193,7 @@ function gerarProposta() {
     style: 'currency',
     currency: 'BRL'
 });
+console.log (proposta)
 console.log(botaoGerarPdf)
     botaoGerarPdf.classList.remove('esconder');
 }
@@ -226,10 +231,9 @@ function custoEstrutura(){
     }
     if (telhadoPlataforma.value === "Laje") {
 
-        
         return 3000
     }
-    if (telhadoPlataforma.value == "Metálico") {
+    if (telhadoPlataforma.value ===  "Metálico") {
         return 0
     }
 
