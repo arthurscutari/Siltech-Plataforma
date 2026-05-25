@@ -41,5 +41,23 @@ expansao.addEventListener("change", function () {
 
 })
 
+const usuarioAtivo = localStorage.getItem('usuarioAtivo')
 
+const nomeUsuario = document.getElementById('usuario-ativo')
 
+const nomeColaborador = document.getElementById('colaborador-ativo')
+
+if (usuarioAtivo === '1') {
+
+    nomeUsuario.textContent = "Arthur Alvarez"
+
+    nomeColaborador.textContent = "Programador"
+
+}
+else if (usuarioAtivo === '2') {
+
+    nomeUsuario.textContent = "Gabriel Sato"
+
+    nomeColaborador.textContent = "Administrador"
+
+}
