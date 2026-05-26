@@ -2,19 +2,20 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center ;
     height: 50%;
     width: 100%;
+     padding: 1rem;
 }
 .tabela{
-    
+   
     border-collapse: collapse;
     width: 80%;
     
 }
 .tabela-linha {
 
-    height: 44px;
+    height: 20px;
     width: 240px;
 }
 .tabela td{
@@ -22,13 +23,3 @@
     
 }
 
-td p {
-
-    width: 200px;
-    text-align: justify;
-    font-size: 12px;    
-    display: flex;
-    color: #0b3b82;
-    padding-left: 10px;
-    font-weight: 700;
-}

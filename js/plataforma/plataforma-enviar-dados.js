@@ -110,6 +110,7 @@ function gerarProposta() {
 
         colaborador: colaboradorAtivo.textContent, 
         data:Date(),
+        id:gerarId(),
         nome:nomePlataforma.value,
         celular:celularPlataforma.value,
         canal:canalPlataforma.value,
@@ -208,7 +209,11 @@ const localizacaoPlataforma = document.getElementById('input-cidade')
 const telhadoPlataforma = document.getElementById('telhado-proposta')
 const inversorPlataforma = document.getElementById('inversor-proposta')
 
+function gerarId() {
 
+    return Math.floor(100000 + Math.random() * 900000)
+
+}
 function lucroQuinze () {
 
     return economiaAnual * (((1 + inflacao) ** 15) - 1) / inflacao

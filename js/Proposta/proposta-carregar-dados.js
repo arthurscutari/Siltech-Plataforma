@@ -21,7 +21,11 @@ const moduloProposta = document.getElementById('modulo-proposta')
 const energiaGeradaProposta = document.getElementById('energia-proposta')
 const valorReducao = document.getElementById('valor-reducao-proposta')
 const valorEconomiaProposta = document.getElementById('valor-economia-proposta')
-nomeProposta.textContent = proposta.nome
+const retornoInvestimentoProposta = document.getElementById('retorno-investimeto-proposta')
+const nomeAssinaturaProposta = document.getElementById('nome-assinatura-proposta')
+
+nomeAssinaturaProposta.textContent = proposta.nome
+nomeProposta.textContent = proposta.nome + ","
 localProposta.textContent = proposta.localizacao + " - SP"
 qtdPlacaProposta.textContent = proposta.placas
 areaProposta.textContent = proposta.area 
@@ -38,7 +42,7 @@ valorFinalProposta.textContent = proposta.valorFinal.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'
 });
-inversorProposta.textContent = proposta.inversor
+inversorProposta.textContent = proposta.inversor + " Huawei;"
 telhadoProposta.textContent = proposta.telhado
 contaSemProposta.textContent = proposta.valorSemSiltech.toLocaleString('pt-BR', {
     style: 'currency',
@@ -53,7 +57,7 @@ invenstimentoTabela.textContent = proposta.valorFinal.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'
 });
-energiaGeradaProposta.textContent = proposta.energiaGerada
+energiaGeradaProposta.textContent = proposta.energiaGerada + "kWh"
 valorReducao.textContent =  (proposta.valorSemSiltech - proposta.valorComSiltech ).toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'
@@ -61,3 +65,5 @@ valorReducao.textContent =  (proposta.valorSemSiltech - proposta.valorComSiltech
 
 valorEconomiaProposta.textContent = "LUCRO DE  " + proposta.economia.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'
 })+ " EM 15 ANOS" ;
+retornoInvestimentoProposta.textContent = proposta.economia.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'
+})
