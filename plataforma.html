@@ -59,17 +59,21 @@
 
               <div class="campo-grupo">
                 <label class="lb">Nome</label>
-                <input type="text" class="campo" id="nome-proposta" placeholder="Digite seu nome"/>
+                <input type="text" class="campo" id="nome-proposta" placeholder="Digite seu nome"autocomplete="new-password"/>
               </div>
               <div class="campo-grupo">
                 <label class="lb">Celular</label>
-                <input type="text" class="campo" id="celular-proposta" placeholder="(xx) xxxx-xxxx"/>
+                <input type="text" class="campo" id="celular-proposta" placeholder="(xx) xxxx-xxxx"autocomplete="new-password"/>
               </div>
               <div class="campo-grupo">
                 <label class="lb">Canal de Vendas</label>
                 <select type="text" class="selecao" id="canal-proposta">
-                  <option value="Google">Google</option>
-                  <option value="Facebook">Facebook</option>
+                  <option value="Digital Smulação">Digital Simulação</option>
+                  <option value="SAGA">SAGA</option>
+                  <option value="Evento">Evento</option>
+                  <option value="Sindicato">Sindicato</option>
+                  <option value="Comunicação">Comunicação</option>
+                  <option value="Telefone">Telefone</option>
                 </select>
               </div>
               
@@ -82,7 +86,7 @@
               </div>
               <div class="campo-grupo">
                 <label class="lb">Localização</label>
-                <input type="text" class="campo" id="input-cidade" placeholder="Digite a cidade">
+                <input type="text" class="campo" id="input-cidade" placeholder="Digite a cidade" autocomplete="new-password">
               </div>
               <div class="input-group">
                 <label class="lb">Módulo</label>
@@ -104,7 +108,7 @@
                 <h2 class="h2-plataforma-for">Promoção</h2>      
                 <div class="input-group">
                   <label class="lb">Tabela de Promoção</label>
-                  <input type="text" class="campo" id="promocao-proposta" />
+                  <input type="text" class="campo" id="promocao-proposta" autocomplete="new-password"/>
                 </div>
               </div>
               <div class="card-3">
@@ -125,6 +129,7 @@
                     type="text"
                     class="campo"
                     id="consumo-kwh"
+                    autocomplete="new-password"
                   />
                 </div>
                 <div class="input-group hidden" id="div-consumo-placa">
@@ -133,6 +138,7 @@
                     type="text"
                     class="campo"
                     id="consumo-placa"
+                    autocomplete="new-password"
                   />
                 </div>
               
@@ -149,6 +155,7 @@
                   type="text"
                   class="campo"
                   id="qtd-expansao-proposta"
+                  autocomplete="new-password"
                 />
               </div>
               
@@ -156,7 +163,7 @@
               
               <div class="input-group">
                 <label class="lb">Preço kWh</label>
-                    <input type="text" name="" id="valor-kwh-proposta" class="campo">
+                    <input type="text" name="" id="valor-kwh-proposta" class="campo" autocomplete="new-password">
               </div>
                <div class="input-group">
                 <label class="lb">Instalação</label>
@@ -194,61 +201,29 @@
               <div class="resumo-conteudo">
                 <div class="resumo-chave">
                   <h4>Cliente</h4>
-                  <p >Nome</p>
+                  <p>Nome</p>
                   <p>Celular</p>
-                  <p >Canal de Vendas</p>
                   <p>Localização</p>
-                  <p>Teste</p>
-                  <p>Instalação</p>
-                  <p>Telhado</p>
-                  <h4>Consumo</h4>
-                  <p>Area</p>
-                  <p>Modulo</p>
-                  <p>Inversor</p>
-                  <p>Expansão de Placas</p>
+                  <p>Area de Telhado</p>
                   <p>Quantidade de Placas</p>
-                  <p>Hsp</p>
-                  <p>kWh</p>
-                  <h4>Valores</h4>
-                  <p>Promoção</p>
-                  <p>Equipamento</p>
-                  <p>Estrutura</p>
-                  <p>Homologação</p>
-                  <p>Retorno</p>
-                  <p>CMV</p>
-                  <p>Valor sem Siltech</p>
-                  <p>Valor com Siltech</p>
-                  <p>Economia Futura</p>
-                  <p>Valor Final</p>
+                  <p>Geração de Energia (kWh)</p>
+                  <p>Conta de Energia sem a Siltech</p>
+                  <p>Conta de energia com a Siltech</p>
+                  <p>Lucro em 1 Ano</p>
+                  <p>Lucro em 15 anos</p>
                 </div>
                 <div class="resumo-valor">
                   <h4>Cliente</h4>
                   <p id="nome-resumo">Nome</p>
                   <p id="celular-resumo">Celular</p>
-                  <p id="canal-resumo">Google</p>
                   <p id="localizacao-resumo">Localização</p>
-                  <p id="teste-resumo">Não</p>
-                  <p id="instalacao-resumo">Bifásico</p>
-                  <p id="telhado-resumo">Cerâmico</p>
-                  <h4>Consumo</h4>
                   <p id="area-resumo">Area</p>
-                  <p id="modulo-resumo">Modulo</p>
-                  <p id="inversor-resumo">Inversor</p>
-                  <p id="expansao-resumo">Expansão de Placas</p>
                   <p id="placas-resumo">Quantidade de Placas</p>
-                  <p id="hsp-resumo">Hsp</p>
-                  <p id="kwh-resumo">kWh</p>
-                  <h4>Valores</h4>
-                  <p id="promocao-resumo">Promocao</p>
-                  <p id="equipamento-resumo">Equipamento</p>
-                  <p id="estrutura-resumo">Estrutura</p>
-                  <p id="homologacao-resumo">Homologação</p>
-                  <p id="retorno-resumo">Retorno</p>
-                  <p id="cmv-resumo">CMV</p>
+                  <p id="geracao-energia-resumo">Geração de Energia (kWh)</p>
                   <p id="valor-sem-resumo">Valor sem Siltech</p>
                   <p id="valor-com-resumo">Valor com Siltech</p>
-                  <p id="economia-resumo">Economia Futura</p>
-                  <p id="valor-final-resumo">Valor Final</p>
+                  <p id="economia-1-ano-resumo">Lucro em 1 Ano</p>
+                  <p id="economia-15-anos-resumo">Lucro em 15 Anos</p>
                 </div>
               </div>
               <button class="botao amarelo" id="btn-confirmar-plataforma">

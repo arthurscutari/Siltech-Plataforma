@@ -57,7 +57,7 @@ invenstimentoTabela.textContent = proposta.valorFinal.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'
 });
-energiaGeradaProposta.textContent = proposta.energiaGerada + "kWh"
+energiaGeradaProposta.textContent = proposta.energiaGerada.toFixed(0) + " kWh"
 valorReducao.textContent =  (proposta.valorSemSiltech - proposta.valorComSiltech ).toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'

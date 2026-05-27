@@ -1,8 +1,4 @@
-const btnGerarPDF = document.getElementById('btn-gerar-plataforma')
-
 //Custos fixos.
-
-
 const deducaoImposto = 0.06
 const contribuição = 0.42
 const comissaoVenda = 0.05
@@ -101,103 +97,11 @@ const qtdPlacas = document.getElementById('quantidade-placa-proposta')
 const hsp = document.getElementById('input-hsp')
 const confirmarProposta = document.getElementById('btn-confirmar-plataforma')
 const botaoGerarPdf = document.getElementById('btn-gerar-plataforma')
+
 confirmarProposta.addEventListener('click', gerarProposta)
 const colaboradorAtivo = document.getElementById('usuario-ativo')
 
-function gerarProposta() {
 
-    const proposta = {
-
-        colaborador: colaboradorAtivo.textContent, 
-        data:Date(),
-        id:gerarId(),
-        nome:nomePlataforma.value,
-        celular:celularPlataforma.value,
-        canal:canalPlataforma.value,
-        teste:"Sim",
-        localizacao:localizacaoPlataforma.value,
-        instalacao:instalacaoPlataforma.value,
-        telhado:telhadoPlataforma.value,
-        area:Number(quantidadePlaca.textContent * 3),
-        modulo: moduloPlataforma.value,
-        inversor:custoEquipamento().inversor,
-        expansao: expansaoPlaca(),
-        placas: qtdPlacas.textContent,
-        hsp:hsp.textContent,
-        kwh:custoEnergia(),
-        promocao: "0",
-        equipamento: custoEquipamento().valorTotal,
-        estrutura: custoEstrutura(),
-        homologacao: custoHomologacao(),
-        retorno: custoRetorno,
-        cmv: custoMercadoriaVendida(),
-        valorSemSiltech: valorEnergiaSemSiltech(),
-        valorComSiltech: solucao(),
-        economiaAnual:economiaAnual(),
-        economia:economiaAnual() * 15,
-        valorFinal: custoFinalProposta(),
-        energiaGerada:geracaoEnergia()
-
-
-    }
-    localStorage.setItem('proposta', JSON.stringify(proposta))
-
-    
-    nomeResumo.textContent = proposta.nome
-    celularResumo.textContent = proposta.celular
-    canalResumo.textContent = proposta.canal
-    localizacaoResumo.textContent = proposta.localizacao
-    testeResumo.textContent = proposta.teste
-    instalacaoResumo.textContent = proposta.instalacao
-    telhadoResumo.textContent = proposta.telhado
-    areaResumo.textContent = proposta.area + "m²"
-    moduloResumo.textContent = proposta.modulo
-    inversorResumo.textContent = proposta.inversor
-    expansaoResumo.textContent = proposta.expansao
-    quantidadePlacaResumo.textContent = proposta.placas
-    hspResumo.textContent = proposta.hsp
-    kwhResumo.textContent = proposta.kwh
-    promocaoResumo.textContent = proposta.promocao
-    equipamentoResumo.textContent = proposta.equipamento.toLocaleString('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-});
-    estruturaResumo.textContent = proposta.estrutura.toLocaleString('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-});
-    retornoResumo.textContent = proposta.retorno.toLocaleString('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-});
-    homologacaoResumo.textContent =  proposta.homologacao.toLocaleString('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-});
-    cmvResumo.textContent = proposta.cmv.toLocaleString('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-});
-    valorSemSiltechResumo.textContent = proposta.valorSemSiltech.toLocaleString('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-});
-    valorComSiltechResumo.textContent = proposta.valorComSiltech.toLocaleString('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-});
-    economiaQuinze.textContent = proposta.economia.toLocaleString('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-});
-    valorFinalResumo.textContent = proposta.valorFinal.toLocaleString('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-});
-console.log (proposta)
-console.log(botaoGerarPdf)
-    botaoGerarPdf.classList.remove('esconder');
-}
 
 //Espaço para Variavels de campo. Seleção dos inputs
 const nomePlataforma = document.getElementById('nome-proposta')
@@ -287,7 +191,7 @@ function custoEquipamento() {
         let valorPlaca = 750
         return {
         valorTotal: (inversor6kw * 2) + (valorPlaca * quantidadePlaca.textContent),
-        potenciaTotal: inversor6kw * 2,
+        potenciaTotal: potencia6kw * 2,
         inversor:"2x 6kw"
         }
 
@@ -342,10 +246,20 @@ function custoEnergia (){
 function custoHomologacao() {
 
     
-    if (custoEquipamento().potenciaTotal <= 10) return 450
-    if (custoEquipamento().potenciaTotal <= 20) return 650
-    if (custoEquipamento().potenciaTotal <= 50) return 800
-    if (custoEquipamento().potenciaTotal <= 75) return 1000
+    if (custoEquipamento().potenciaTotal <= 10) {
+
+        return 450
+    }
+    if (custoEquipamento().potenciaTotal <= 20){
+        return 650
+    } 
+    if (custoEquipamento().potenciaTotal <= 50) {
+        return 800
+    }
+    if (custoEquipamento().potenciaTotal <= 75) {
+        
+        return 1000
+    }
 }
 function custoInstalacao() {
 
@@ -428,9 +342,96 @@ const valorSemSiltechResumo = document.getElementById('valor-sem-resumo')
 const valorComSiltechResumo = document.getElementById('valor-com-resumo')
 const valorFinalResumo = document.getElementById('valor-final-resumo')
 const economiaQuinze = document.getElementById('economia-resumo')
-
+const economiaUm = document.getElementById('economia-1-ano-resumo')
+const economiaQuinzeAnual = document.getElementById('economia-15-anos-resumo')
+const geracaoEnergiaResumo = document.getElementById('geracao-energia-resumo')
 
 botaoGerarPdf.addEventListener('click', () =>{
 
     window.location.href = "proposta.html"
 })
+
+const btnGerarPDF = document.getElementById('btn-gerar-plataforma')
+
+function gerarProposta() {
+
+    const proposta = {
+
+        colaborador: colaboradorAtivo.textContent, 
+        data:new Date().toLocaleDateString('pt-BR'),
+        id:gerarId(),
+        nome:nomePlataforma.value,
+        celular:celularPlataforma.value,
+        canal:canalPlataforma.value,
+        teste:propostaTeste(),
+        localizacao:localizacaoPlataforma.value,
+        instalacao:instalacaoPlataforma.value,
+        telhado:telhadoPlataforma.value,
+        area:Number(quantidadePlaca.textContent * 3),
+        modulo: moduloPlataforma.value,
+        inversor:custoEquipamento().inversor,
+        expansao: expansaoPlaca(),
+        placas: qtdPlacas.textContent,
+        hsp:hsp.textContent,
+        kwh:custoEnergia(),
+        promocao: "0",
+        equipamento: custoEquipamento().valorTotal,
+        estrutura: custoEstrutura(),
+        homologacao: custoHomologacao(),
+        retorno: custoRetorno,
+        cmv: custoMercadoriaVendida(),
+        valorSemSiltech: valorEnergiaSemSiltech(),
+        valorComSiltech: solucao(),
+        economiaAnual:economiaAnual(),
+        economia:economiaAnual() * 15,
+        valorFinal: custoFinalProposta(),
+        energiaGerada:geracaoEnergia()
+
+
+    }
+    localStorage.setItem('proposta', JSON.stringify(proposta))
+
+    fetch("https://script.google.com/macros/s/AKfycbyFmuY-oNvdL4lxxqkfTtCuaVuaYhGjyW_KBQvXLshtX-RJcmWnYWinyik2JA7yAXeNaQ/exec", {
+
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "text/plain"
+        },
+        body: JSON.stringify(proposta)
+
+    })
+    .then(() => {
+
+        console.log("Proposta enviada!")
+
+    })
+    .catch((error) => {
+
+        console.log("Erro:", error)
+
+    })
+  
+    nomeResumo.textContent = proposta.nome
+    celularResumo.textContent = proposta.celular
+    localizacaoResumo.textContent = proposta.localizacao
+    areaResumo.textContent = proposta.area + "m²"
+    quantidadePlacaResumo.textContent = proposta.placas
+    valorSemSiltechResumo.textContent = proposta.valorSemSiltech.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'});
+    valorComSiltechResumo.textContent = proposta.valorComSiltech.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL' });
+    economiaUm.textContent = proposta.economiaAnual.toLocaleString('pt-BR', {
+     style: 'currency',currency: 'BRL'});
+    economiaQuinzeAnual.textContent = (proposta.economiaAnual * 15).toLocaleString('pt-BR', {
+     style: 'currency', currency: 'BRL'});
+    geracaoEnergiaResumo.textContent = proposta.energiaGerada.toFixed(2)
+
+    console.log (proposta)
+    
+    botaoGerarPdf.classList.remove('esconder');
+
+}
+

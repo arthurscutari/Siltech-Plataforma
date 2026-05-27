@@ -652,12 +652,31 @@ const cidadesDB = {
   
 };
 
+function normalizarTexto(texto) {
+
+  return texto
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+
+}
+
+const cidadesNormalizadas = {};
+
+for (const cidade in cidadesDB) {
+
+  const cidadeFormatada = normalizarTexto(cidade);
+
+  cidadesNormalizadas[cidadeFormatada] = cidadesDB[cidade];
+
+}
 
 inputCidade.addEventListener("input", () => {
 
-  const cidade = inputCidade.value.trim();
+  const cidade = normalizarTexto(inputCidade.value);
 
-  const cidadeEncontrada = cidadesDB[cidade];
+  const cidadeEncontrada = cidadesNormalizadas[cidade];
 
   if (cidadeEncontrada) {
 
