@@ -42,7 +42,7 @@ valorFinalProposta.textContent = proposta.valorFinal.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'
 });
-inversorProposta.textContent = proposta.inversor + " Huawei;"
+inversorProposta.textContent = mostrarInversor()
 telhadoProposta.textContent = proposta.telhado
 contaSemProposta.textContent = proposta.valorSemSiltech.toLocaleString('pt-BR', {
     style: 'currency',
@@ -67,3 +67,35 @@ valorEconomiaProposta.textContent = "LUCRO DE  " + proposta.economia.toLocaleStr
 })+ " EM 15 ANOS" ;
 retornoInvestimentoProposta.textContent = proposta.economia.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'
 })
+
+function mostrarInversor() 
+{
+
+    if (proposta.inversor === "1x 3kw") {
+
+        return "01 inversor Huawei - 3kW"
+    }
+     if (proposta.inversor === "1x 6kw") {
+
+        return "01 inversor Huawei - 6kW"
+    }
+     if (proposta.inversor === "1x 6kw + 1x 3kw") {
+
+        return "02 Inversores Huawei - 3kW + 6kW"
+    }
+     if (proposta.inversor === "2x 6kw") {
+
+        return "02 inversores Huawei - 6kW"
+     }
+     if (proposta.inversor === "3x 6kw") {
+
+        return "03 inversores Huawei - 6kW"
+    }
+    if (proposta.inversor === "4x 6kw") {
+
+        return "014 inversores Huawei - 6kW"
+    }
+    
+
+    
+}

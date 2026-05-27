@@ -84,10 +84,10 @@
     right: -10px;
     color: red;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 14pt;
     border: 2px solid #083f7a;
-    height: 50px;
-    width: 200px;
+    height: 45px;
+    width: 180px;
     border-radius: 5px;
 }
 
@@ -99,14 +99,14 @@
     position: relative;
     margin: 0;
     padding: 0;
-    top: 125px;
+    top: 130px;
     left: 445px;
     color: rgb(117, 230, 102);
     font-weight: 700;
-    font-size: 22px;
+    font-size: 14pt;
     border: 2px solid #083f7a;
-    height: 50px;
-    width: 200px;
+    height: 45px;
+    width: 180px;
     border-radius: 5px;
 
 }
@@ -116,15 +116,15 @@
     display: flex;
     margin: 0;
     padding: 0;
-    top: 460px;
-    left: 435px;
+    top: 470px;
+    left: 445px;
     color: #083f7a;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 14pt;
     border: 2px solid #083f7a;
-    height: 50px;
+    height: 45px;
     border-radius: 5px;
-    width: 200px;
+    width: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,5 +165,5 @@
     height: 90%;
     flex: 1;
     align-items: flex-start;
-    justify-content: space-around;
+
 }
