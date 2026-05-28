@@ -1,62 +1,55 @@
 .p-plataforma {
-
-    font-size: 12px;
-    font-weight: 200;
-    margin: 0;
-    padding:0;
-    color: white;
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
-.h3-plataforma{
-
-    font-size: 19px;
-    margin: 0;
-    padding: 0;
-    color: white;
+.h3-plataforma {
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 .p-nav-plataforma {
-    
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
-    padding:0;
-
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 .h2-plataforma {
-
-    font-size: 22px;
-    margin:0;
-    padding: 0;
-    font-weight: 600;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
 }
 
-.h3-user{
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
+.h3-user {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
 }
 
 .p-user {
-
-    font-size: 14px;
-    font-weight: 400;
-    color: gray;
-    margin: 0;
-    padding: 0;
-    
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+  margin: 0;
+  padding: 0;
 }
 .h2-plataforma-for {
   font-size: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   color: #1f2a44;
 }
 
 .p-general {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 36px;
   width: 100%;
   box-sizing: border-box;
   outline: none;

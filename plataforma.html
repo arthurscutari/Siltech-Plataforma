@@ -1,184 +1,186 @@
 <!Doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/plataforma/index.css">    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=assignment" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Siltech</title>
-  </head>
-  <body>
-    <section class="app-plataforma">
-      <sidebar class="app-sidebar-plataforma">
-        <div class="sidebar-logo-plataforma">
-          <img src="img/logo-siltech.png" alt="Logo siltech" height="50px"width="50px">
-          <div class="sidebar-title-plataforma">
-            <h3 class="h3-plataforma">Siltech</h3>
-            <p class="p-plataforma">Plataforma de Propostas</p>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/plataforma/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=assignment" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Siltech</title>
+</head>
+
+<body>
+  <section class="app-plataforma">
+    <sidebar class="app-sidebar-plataforma">
+      <div class="sidebar-logo-plataforma">
+        <img src="img/logo-siltech.png" alt="Logo siltech" height="50px" width="50px">
+        <div class="sidebar-title-plataforma">
+          <h3 class="h3-plataforma">Siltech</h3>
+          <p class="p-plataforma">Plataforma de Propostas</p>
         </div>
-        <nav class="nav-sidebar-plataforma">
-           <!-- <div class="card-nav-plataforma nav-proposta">
+      </div>
+      <nav class="nav-sidebar-plataforma">
+        <!-- <div class="card-nav-plataforma nav-proposta">
             <i class="bi bi-house icon branco"></i>
             <p class="p-nav-plataforma branco">Inicio</p>
           </div> -->
-          <div class="card-nav-plataforma nav-proposta item-selecionado">
-            <i class="bi bi-clipboard icon branco"></i>
-            <p class="p-nav-plataforma branco">Proposta</p>
-          </div>
-          <!-- <div class="card-nav-plataforma nav-proposta">
+        <div class="card-nav-plataforma nav-proposta item-selecionado">
+          <i class="bi bi-clipboard icon branco"></i>
+          <p class="p-nav-plataforma branco">Proposta</p>
+        </div>
+        <!-- <div class="card-nav-plataforma nav-proposta">
             <i class="bi bi-clock-history icon branco"></i>
             <p class="p-nav-plataforma branco">Hstórico</p>
           </div> -->
-          <div class="card-nav-plataforma nav-proposta" id="btn-sair-plataforma">
-            <i class="bi bi-box-arrow-left icon branco"></i>
-            <p class="p-nav-plataforma branco">Sair</p>
+        <div class="card-nav-plataforma nav-proposta" id="btn-sair-plataforma">
+          <i class="bi bi-box-arrow-left icon branco"></i>
+          <p class="p-nav-plataforma branco">Sair</p>
+        </div>
+      </nav>
+    </sidebar>
+    <main class="main-plataforma">
+      <section class="section-proposta-plataforma">
+        <div class="cabecalho-plataforma">
+          <h2 class="h2-plataforma">Proposta Comercial</h2>
+          <div class="cabecalho-user">
+            <div class="cabecalho-user-text">
+              <h3 class="h3-user" id="usuario-ativo">Arthur Alvarez</h3>
+              <p class="p-user" id="colaborador-ativo">Vendedor</p>
+            </div>
+            <i class="bi bi-person user-icon"></i>
           </div>
-        </nav>
-      </sidebar>
-      <main class="main-plataforma">
-        <section class="section-proposta-plataforma">
-          <div class="cabecalho-plataforma">
-              <h2 class="h2-plataforma">Proposta Comercial</h2>
-              <div class="cabecalho-user"> 
-                <div class="cabecalho-user-text">
-                  <h3 class="h3-user" id="usuario-ativo">Arthur Alvarez</h3>
-                  <p class="p-user" id="colaborador-ativo">Vendedor</p>
-                </div>
-               <i class="bi bi-person user-icon"></i>
-              </div>
-              
-          </div>
-          <div class="form-plataforma">
-            <div action="" class="form-proposta-plataforma">
-              <div class="card-1">
-                  <h2 class="h2-plataforma-for">Cliente e Localização</h2>
 
-                <div class="campo-grupo">
-                  <div class="label-info">
-                    <label class="lb" for="nome-proposta">Nome</label> 
-                    <i class="bi bi-info-circle"></i>
-                  </div>
-                
-                  <input type="text" class="campo" id="nome-proposta" placeholder="Digite seu nome"autocomplete="new-password"/>
-                </div>
-                <div class="campo-grupo">
-                  <div class="label-info">
-                    <label class="lb" for="celular-proposta">Celular</label> 
-                    <i class="bi bi-info-circle"></i>
-                  </div>
-                  <input type="text" class="campo" id="celular-proposta" placeholder="(xx) xxxx-xxxx"autocomplete="new-password"/>
-                </div>
-                <div class="campo-grupo">
-                  <div class="label-info">
-                    <label class="lb" for="canal-proposta">Canal de Vendas</label> 
-                    <i class="bi bi-info-circle"></i>
-                  </div>
-                  <select type="text" class="selecao" id="canal-proposta">
-                    <option value="Digital Smulação">Digital Simulação</option>
-                    <option value="SAGA">SAGA</option>
-                    <option value="Evento">Evento</option>
-                    <option value="Sindicato">Sindicato</option>
-                    <option value="Comunicação">Comunicação</option>
-                    <option value="Telefone">Telefone</option>
-                  </select>
-                </div>
-                
-                <div class="grupo">
-                  <div class="label-info">
-                    <label class="lb" for="teste-proposta">Proposta teste</label> 
-                    <i class="bi bi-info-circle"></i>
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" id="teste-proposta" />
-                    <span class="slider"></span>
-                  </label>
-                </div>
-                <div class="campo-grupo">
-                  <div class="label-info">
-                    <label class="lb" for="input-cidade">Localização</label> 
-                    <i class="bi bi-info-circle"></i>
-                  </div>
-                  <input type="text" class="campo" id="input-cidade" placeholder="Digite a cidade" autocomplete="new-password">
-                </div>
-                <div class="input-group">
-                  <div class="label-info">
-                    <label class="lb" for="modulo-proposta">Modulo</label> 
-                    <i class="bi bi-info-circle"></i>
-                  </div>
-                  <select type="text" class="selecao" id="modulo-proposta">
-                    <option value="575Wp Tier 1">575Wp Tier 1</option>
-                    <option value="585Wp Tier 1">585Wp Tier 1</option>
-                    <option value="610Wp Tier 1">610Wp Tier 1</option>
-                    <option value="700Wp Tier 1">700Wp Tier 1</option>
-                  </select>
-                </div> 
-                <div class="input-group">
-                  <div class="label-info">
-                    <label class="lb" for="inversor-proposta">Inversor</label> 
-                    <i class="bi bi-info-circle"></i>
-                  </div>
-                  <select type="text" class="selecao" id="inversor-proposta">
-                    <option value="String Ongrid">String Ongrid</option>
-                  </select>
-                </div>
-              </div>
-              <div class="card-2">
-                <h2 class="h2-plataforma-for">Promoção</h2>      
-                <div class="input-group">
-                  <div class="label-info">
-                  <label class="lb" for="promocao-proposta">Promocão</label> 
-                  <i class="bi bi-info-circle"></i>
-                </div>
-                  <input type="text" class="campo" id="promocao-proposta" autocomplete="new-password"/>
-                </div>
-              </div>
-              <div class="card-3">
-                <h2 class="h2-plataforma-for">Consumo e Instalação</h2>
+        </div>
+        <div class="form-plataforma">
+          <div class="form-proposta-plataforma">
+            <div class="card-1">
+              <h2 class="h2-plataforma-for">Cliente e Localização</h2>
 
-                 
-                <div class="input-group">
-                  <div class="label-info">
-                  <label class="lb" for="consumo-proposta">Consumo</label> 
+              <div class="campo-grupo">
+                <div class="label-info">
+                  <label class="lb" for="nome-proposta">Nome</label>
                   <i class="bi bi-info-circle"></i>
                 </div>
-                  <select type="text" class="campo" id="consumo-proposta">
-                    <option value="0">Base de cálculo</option>
-                    <option value="1">kWh</option>
-                    <option value="2">Placas</option>
-                  </select>
-                </div>
-                <div class="input-group hidden" id="div-consumo-kwh">
-                  <div class="label-info">
-                  <label class="lb" for="consumo-kwh">kWh</label> 
+                <input type="text" class="campo" id="nome-proposta" placeholder="Digite seu nome"
+                  autocomplete="new-password" data-required="true"/>
+              </div>
+              <div class="campo-grupo">
+                <div class="label-info">
+                  <label class="lb" for="celular-proposta">Celular</label>
                   <i class="bi bi-info-circle"></i>
                 </div>
-                  <input
-                    type="text"
-                    class="campo"
-                    id="consumo-kwh"
-                    autocomplete="new-password"
-                  />
-                </div>
-                <div class="input-group hidden" id="div-consumo-placa">
-                  <div class="label-info">
-                  <label class="lb" for="consumo-placa">Placas</label> 
+                <input type="text" class="campo" id="celular-proposta" placeholder="(xx) xxxx-xxxx"
+                  autocomplete="new-password" />
+              </div>
+              <div class="campo-grupo">
+                <div class="label-info">
+                  <label class="lb" for="canal-proposta">Canal de Vendas</label>
                   <i class="bi bi-info-circle"></i>
                 </div>
-                  <input
-                    type="text"
-                    class="campo"
-                    id="consumo-placa"
-                    autocomplete="new-password"
-                  />
-                </div>
-              
+                <select type="text" class="selecao" id="canal-proposta" data-required="true">
+                  <option value="">Selecione</option>
+                  <option value="Digital Smulação">Digital Simulação</option>
+                  <option value="SAGA">SAGA</option>
+                  <option value="Evento">Evento</option>
+                  <option value="Sindicato">Sindicato</option>
+                  <option value="Comunicação">Comunicação</option>
+                  <option value="Telefone">Telefone</option>
+                </select>
+              </div>
+
               <div class="grupo">
                 <div class="label-info">
-                  <label class="lb" for="expansao">Expansão de placas</label> 
+                  <label class="lb" for="teste-proposta">Proposta teste</label>
+                  <i class="bi bi-info-circle"></i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="teste-proposta" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="campo-grupo">
+                <div class="label-info">
+                  <label class="lb" for="input-cidade">Localização</label>
+                  <i class="bi bi-info-circle"></i>
+                </div>
+                <input type="text" class="campo" id="input-cidade" placeholder="Digite a cidade"
+                  autocomplete="new-password" data-required="true">
+              </div>
+              <div class="campo-grupo">
+                <div class="label-info">
+                  <label class="lb" for="modulo-proposta">Modulo</label>
+                  <i class="bi bi-info-circle"></i>
+                </div>
+                <select type="text" class="selecao" id="modulo-proposta" data-required="true">
+                  <option value="">Selecione</option>
+                  <option value="575Wp Tier 1">575Wp Tier 1</option>
+                  <option value="585Wp Tier 1">585Wp Tier 1</option>
+                  <option value="610Wp Tier 1">610Wp Tier 1</option>
+                  <option value="700Wp Tier 1">700Wp Tier 1</option>
+                </select>
+              </div>
+              <div class="campo-grupo">
+                <div class="label-info">
+                  <label class="lb" for="inversor-proposta">Inversor</label>
+                  <i class="bi bi-info-circle"></i>
+                </div>
+                <select type="text" class="selecao" id="inversor-proposta">
+                  <option value="String Ongrid">String Ongrid</option>
+                </select>
+              </div>
+              <div class="campo-grupo">
+                <div class="label-info">
+                  <label class="lb" for="promocao-proposta">Promocão</label>
+                  <i class="bi bi-info-circle"></i>
+                </div>
+                <input type="text" class="campo" id="promocao-proposta" autocomplete="new-password" />
+              </div>
+            </div>
+            <div class="card-2" style="background-color: #273c75;">
+              <h2 class="h2-plataforma-for" style="color: #ffb200;">Hsp</h2>
+              <div class="campo-grupo">
+                <label class="lb branco">HSP</label>
+                <p class="p-general border-branco branco" id="input-hsp">0</p>
+              </div>
+            </div>
+            <div class="card-3">
+              <h2 class="h2-plataforma-for">Consumo</h2>
+              <div class="campo-grupo">
+                <div class="label-info">
+                  <label class="lb" for="consumo-proposta">Consumo</label>
+                  <i class="bi bi-info-circle"></i>
+                </div>
+                <select type="text" class="campo" id="consumo-proposta" data-required="true">
+                  <option value="" selected disabled>Base de cálculo</option>
+                  <option value="1">kWh</option>
+                  <option value="2">Placas</option>
+                </select>
+              </div>
+              <div class="campo-grupo hidden" id="div-consumo-kwh">
+                <div class="label-info">
+                  <label class="lb" for="consumo-kwh">kWh</label>
+                  <i class="bi bi-info-circle"></i>
+                </div>
+                <input type="text" class="campo" id="consumo-kwh" autocomplete="new-password" />
+              </div>
+              <div class="campo-grupo hidden" id="div-consumo-placa">
+                <div class="label-info">
+                  <label class="lb" for="consumo-placa">Placas</label>
+                  <i class="bi bi-info-circle"></i>
+                </div>
+                <input type="text" class="campo" id="consumo-placa" autocomplete="new-password" />
+              </div>
+
+              <div class="grupo">
+                <div class="label-info">
+                  <label class="lb" for="expansao">Expansão de placas</label>
                   <i class="bi bi-info-circle"></i>
                 </div>
                 <label class="switch">
@@ -186,114 +188,110 @@
                   <span class="slider"></span>
                 </label>
               </div>
-              <div class="input-group hidden" id="div-input-expansao">
+              <div class="campo-grupo hidden" id="div-input-expansao">
                 <div class="label-info">
-                  <label class="lb" for="qtd-expansao-proposta">Quantidade de placas</label> 
+                  <label class="lb" for="qtd-expansao-proposta">Quantidade de placas</label>
                   <i class="bi bi-info-circle"></i>
                 </div>
-                <input
-                  type="text"
-                  class="campo"
-                  id="qtd-expansao-proposta"
-                  autocomplete="new-password"
-                />
+                <input type="text" class="campo" id="qtd-expansao-proposta" autocomplete="new-password" />
               </div>
-              
-                      
-              
-              <div class="input-group">
+            </div>
+            <div class="card-4">
+              <h2 class="h2-plataforma-for">Instalação</h2>
+              <div class="campo-grupo">
                 <div class="label-info">
-                  <label class="lb" for="valor-kwh-proposta">Preço kWh</label> 
+                  <label class="lb" for="valor-kwh-proposta">Preço kWh</label>
                   <i class="bi bi-info-circle"></i>
                 </div>
-                    <input type="text" name="" id="valor-kwh-proposta" class="campo" autocomplete="new-password">
+                <input type="text" name="" id="valor-kwh-proposta" class="campo" autocomplete="new-password">
               </div>
-               <div class="input-group">
+              <div class="campo-grupo">
                 <div class="label-info">
-                  <label class="lb" for="instalacao-proposta">Instalação</label> 
+                  <label class="lb" for="instalacao-proposta">Instalação</label>
                   <i class="bi bi-info-circle"></i>
                 </div>
-                <select type="text" class="selecao" id="instalacao-proposta">
-                  
+                <select type="text" class="selecao" id="instalacao-proposta"data-required="true">
+                  <option value="">Selecione</option>
                   <option value="Bifásico">Bifásico</option>
-                  <option value="Trifásico">Trifásico</option>  
-                  
+                  <option value="Trifásico">Trifásico</option>
+
                 </select>
               </div>
-                 <div class="input-group">
+              <div class="campo-grupo">
                 <div class="label-info">
-                  <label class="lb" for="telhado-proposta">Telhado</label> 
+                  <label class="lb" for="telhado-proposta">Telhado</label>
                   <i class="bi bi-info-circle"></i>
                 </div>
-                <select type="text" class="selecao" id="telhado-proposta">
+                <select type="text" class="selecao" id="telhado-proposta"data-required="true">
+                  <option value="">Selecione</option>
                   <option value="Cerâmico">Cerâmico</option>
                   <option value="Fibrocimento">Fibrocimento</option>
                   <option value="Metálico">Metálico</option>
                   <option value="Laje">Laje</option>
                 </select>
               </div>
-              </div>
-              <div class="card-4" style="background-color: #273c75;">
-                <h2 class="h2-plataforma-for" style="color: #ffb200;">Placas e HSP</h2>
-                <div class="campo-grupo">
-                <label class="lb branco">HSP</label>
-                <p class="p-general border-branco branco" id="input-hsp" >0</p>
-              </div>
-                <div class="input-group">
+            </div>
+            <div class="card-5" style="background-color: #273c75;">
+              <h2 class="h2-plataforma-for" style="color: #ffb200;">Placas</h2>
+              <div class="campo-grupo">
                 <label class="lb branco">Quantidade de Placas</label>
                 <p class="p-general border-branco branco" id="quantidade-placa-proposta">0</p>
               </div>
-              </div>
-            </div>
-            <div class="resumo-proposta-plataforma">
-              <h2 class="h2-plataforma-for">Resumo Proposta</h2>
-              <div class="resumo-conteudo">
-                <div class="resumo-chave">
-                  <h4>Cliente</h4>
-                  <p class="background-escuro">Nome</p>
-                  <p>Celular</p>
-                  <p class="background-escuro">Localização</p>
-                  <p >Area de Telhado</p>
-                  <p class="background-escuro">Quantidade de Placas</p>
-                  <p>Geração de Energia (kWh)</p>
-                  <p class="background-escuro">Conta de Energia sem a Siltech</p>
-                  <p>Conta de energia com a Siltech</p>
-                  <p class="background-escuro">Lucro em 1 Ano</p>
-                  <p>Lucro em 15 anos</p>
-                </div>
-                <div class="resumo-valor">
-                  <h4>Proposta</h4>
-                  <p id="nome-resumo" class="background-escuro">-</p>
-                  <p id="celular-resumo">-</p>
-                  <p id="localizacao-resumo" class="background-escuro">-</p> 
-                  <p id="area-resumo">-</p>
-                  <p id="placas-resumo" class="background-escuro">-</p>
-                  <p id="geracao-energia-resumo">-</p>
-                  <p id="valor-sem-resumo" class="background-escuro">-</p>
-                  <p id="valor-com-resumo">-</p>
-                  <p id="economia-1-ano-resumo" class="background-escuro">-</p>
-                  <p id="economia-15-anos-resumo">-</p>
-                </div>
-              </div>
-              <button class="botao amarelo" id="btn-confirmar-plataforma">
-                Gerar Proposta
-              </button>
-              <button class="botao esconder" id="btn-gerar-plataforma">
-                Gerar PDF
-              </button>
-               
             </div>
           </div>
-        </section>
-      </main>
-    </section>
-    <script src="js/plataforma/plataforma-banco-dados.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="js/plataforma/plataforma-enviar-dados.js"></script>
-    <script src="js/plataforma/plataforma-formulario.js"></script>
-    <script src="js/plataforma/plataforma-gerar-hsp.js"></script>
-    <script src="js/plataforma/plataforma-navegacao.js"></script>
-    <script src="js/plataforma/plataforma-validacao.js"></script>
-      </body>
+          <div class="resumo-proposta-plataforma">
+            <h2 class="h2-plataforma-for">Resumo Proposta</h2>
+            <div class="resumo-conteudo">
+              <div class="resumo-chave">
+                <h4>Cliente</h4>
+                <p class="background-escuro">Nome</p>
+                <p>Celular</p>
+                <p class="background-escuro">Localização</p>
+                <p>Area de Telhado</p>
+                <p class="background-escuro">Quantidade de Placas</p>
+                <p>Geração de Energia (kWh)</p>
+                <p class="background-escuro">Conta de Energia sem a Siltech</p>
+                <p>Conta de energia com a Siltech</p>
+                <p class="background-escuro">Lucro em 1 Ano</p>
+                <p>Lucro em 15 anos</p>
+              </div>
+              <div class="resumo-valor">
+                <h4>Proposta</h4>
+                <p id="nome-resumo" class="background-escuro">-</p>
+                <p id="celular-resumo">-</p>
+                <p id="localizacao-resumo" class="background-escuro">-</p>
+                <p id="area-resumo">-</p>
+                <p id="placas-resumo" class="background-escuro">-</p>
+                <p id="geracao-energia-resumo">-</p>
+                <p id="valor-sem-resumo" class="background-escuro">-</p>
+                <p id="valor-com-resumo">-</p>
+                <p id="economia-1-ano-resumo" class="background-escuro">-</p>
+                <p id="economia-15-anos-resumo">-</p>
+              </div>
+            </div>
+            <button type="submit" class="botao amarelo" id="btn-confirmar-plataforma">
+              Gerar Proposta
+            </button>
+            <button class="botao esconder" id="btn-gerar-plataforma">
+              Gerar PDF
+            </button>
+
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+  </section>
+  <script src="js/plataforma/plataforma-funcoes.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="js/plataforma/plataforma-enviar-dados.js"></script>
+  <script src="js/plataforma/plataforma-formulario.js"></script>
+  <script src="js/plataforma/plataforma-gerar-hsp.js"></script>
+  <script src="js/plataforma/plataforma-navegacao.js"></script>
+  <script src="js/plataforma/plataforma-validacao.js"></script>
+</body>
+
 </html>

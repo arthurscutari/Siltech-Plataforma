@@ -23,6 +23,7 @@ const valorReducao = document.getElementById('valor-reducao-proposta')
 const valorEconomiaProposta = document.getElementById('valor-economia-proposta')
 const retornoInvestimentoProposta = document.getElementById('retorno-investimeto-proposta')
 const nomeAssinaturaProposta = document.getElementById('nome-assinatura-proposta')
+const qtdPlacasModuloProposta = document.getElementById('placas-modulo-proposta');
 
 nomeAssinaturaProposta.textContent = proposta.nome
 nomeProposta.textContent = proposta.nome + ","
@@ -67,7 +68,7 @@ valorEconomiaProposta.textContent = "LUCRO DE  " + proposta.economia.toLocaleStr
 })+ " EM 15 ANOS" ;
 retornoInvestimentoProposta.textContent = proposta.economia.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'
 })
-
+qtdPlacasModuloProposta.textContent = proposta.placas
 function mostrarInversor() 
 {
 
