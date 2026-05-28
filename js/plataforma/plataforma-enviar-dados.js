@@ -119,7 +119,7 @@ function gerarId() {
 }
 function lucroQuinze () {
 
-    return economiaAnual * (((1 + inflacao) ** 15) - 1) / inflacao
+    return economiaAnual() * (((1 + inflacao) ** 15) - 1) / inflacao
 }
 function economiaAnual() {
 
@@ -347,9 +347,8 @@ const geracaoEnergiaResumo = document.getElementById('geracao-energia-resumo')
 
 
 const btnGerarPDF = document.getElementById('btn-gerar-plataforma')
-
-function gerarProposta() {
-
+function gerarProposta(e) {
+   e.preventDefault()
     const proposta = {
 
         colaborador: colaboradorAtivo.textContent, 
@@ -406,7 +405,8 @@ function gerarProposta() {
         console.log("Erro:", error)
 
     })
-   
+   console.log(nomeResumo)
+
   
     nomeResumo.textContent = proposta.nome
     celularResumo.textContent = proposta.celular
@@ -427,7 +427,15 @@ function gerarProposta() {
 
     console.log (proposta)
     
-    botaoGerarPdf.classList.remove('esconder');
+    btnGerarPDF.classList.remove('esconder');
 
 }
 
+
+
+btnGerarPDF.addEventListener('click', () =>{
+
+    window.location.href = "proposta.html"
+
+   
+})
