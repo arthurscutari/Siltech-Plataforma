@@ -40,28 +40,41 @@
 }
 .resumo-chave p {
 
-    font-size: 14px;
-    padding: 2px;
+    font-size: 13px;
+    padding: 8px;
     color: gray;
+    width: 100%;
+  
 }
 .resumo-chave h4 {
 
-   font-size: 14px;
+   font-size: 16px;
     padding: 1px;
     font-weight: 700;
-    color: #273c75
+    color: #273c75;
+    margin-bottom: 10px;
 }
 .resumo-valor p {
 
-    font-size: 14px;
-    padding: 2px;
-    color: black;
+    font-size: 13px;
+    padding: 8px;
+    color: rgb(37, 37, 37);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 .resumo-valor h4 {
 
-    font-size: 14px;
+    font-size: 16px;
     padding: 1px;
     color: #ffb200;
     font-weight: 700;
+        margin-bottom: 10px;
+
+}
+
+.background-escuro {
+
+    background-color: rgba(63, 109, 236, 0.116)
 }
 

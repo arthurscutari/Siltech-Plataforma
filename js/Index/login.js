@@ -16,17 +16,29 @@ botaoAcessar.addEventListener('click', (e) =>
 
     window.location.href = "plataforma.html"
 }
-   if(usuario.value === "gabrielsato" && senha.value === "admin123") {
+   else if(usuario.value === "gabrielsato" && senha.value === "admin123") {
 
     localStorage.setItem('usuarioAtivo', '2')
 
     window.location.href = "plataforma.html"
 }
-if (usuario.value === "" && senha.value === ""){
+   else if(usuario.value === "alefferreira" && senha.value === "sdr012026") {
+
+    localStorage.setItem('usuarioAtivo', '3')
+
+    window.location.href = "plataforma.html"
+}
+   else if(usuario.value === "pedrobrito" && senha.value === "sdr022026") {
+
+    localStorage.setItem('usuarioAtivo', '4')
+
+    window.location.href = "plataforma.html"
+}
+else if (usuario.value === "" && senha.value === ""){
 
         pError.classList.remove('apagar')
-    }
-    else {
+}
+else {
                 pError.classList.remove('apagar')
 
 

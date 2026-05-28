@@ -53,10 +53,24 @@ if (usuarioAtivo === '1') {
     nomeColaborador.textContent = "Programador"
 
 }
-else if (usuarioAtivo === '2') {
+if (usuarioAtivo === '2') {
 
     nomeUsuario.textContent = "Gabriel Sato"
 
     nomeColaborador.textContent = "Administrador"
+
+}
+if (usuarioAtivo === '3') {
+
+    nomeUsuario.textContent = "Alef Ferreira"
+
+    nomeColaborador.textContent = "SDR"
+
+}
+if (usuarioAtivo === '4') {
+
+    nomeUsuario.textContent = "Pedro Brito"
+
+    nomeColaborador.textContent = "SDR"
 
 }

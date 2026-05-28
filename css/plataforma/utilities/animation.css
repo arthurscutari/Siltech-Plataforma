@@ -17,7 +17,16 @@
     display: flex;
 }
 
-.card-nav-plataforma:hover {
 
-    background-color: #243253;
+.item-selecionado {
+
+    background-color: white;
+
+}
+.item-selecionado i,
+.item-selecionado p {
+
+    font-weight: 500;
+    color: #273c75;
+    
 }

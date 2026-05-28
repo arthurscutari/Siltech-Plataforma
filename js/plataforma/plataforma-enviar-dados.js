@@ -96,7 +96,6 @@ consumoPlaca.addEventListener(
 const qtdPlacas = document.getElementById('quantidade-placa-proposta')
 const hsp = document.getElementById('input-hsp')
 const confirmarProposta = document.getElementById('btn-confirmar-plataforma')
-const botaoGerarPdf = document.getElementById('btn-gerar-plataforma')
 
 confirmarProposta.addEventListener('click', gerarProposta)
 const colaboradorAtivo = document.getElementById('usuario-ativo')
@@ -346,10 +345,6 @@ const economiaUm = document.getElementById('economia-1-ano-resumo')
 const economiaQuinzeAnual = document.getElementById('economia-15-anos-resumo')
 const geracaoEnergiaResumo = document.getElementById('geracao-energia-resumo')
 
-botaoGerarPdf.addEventListener('click', () =>{
-
-    window.location.href = "proposta.html"
-})
 
 const btnGerarPDF = document.getElementById('btn-gerar-plataforma')
 
@@ -390,8 +385,8 @@ function gerarProposta() {
 
     }
     localStorage.setItem('proposta', JSON.stringify(proposta))
-
-    fetch("https://script.google.com/macros/s/AKfycbyFmuY-oNvdL4lxxqkfTtCuaVuaYhGjyW_KBQvXLshtX-RJcmWnYWinyik2JA7yAXeNaQ/exec", {
+    //Código para enviar os dados para o BD
+      fetch("https://script.google.com/macros/s/AKfycbyFmuY-oNvdL4lxxqkfTtCuaVuaYhGjyW_KBQvXLshtX-RJcmWnYWinyik2JA7yAXeNaQ/exec", {
 
         method: "POST",
         mode: "no-cors",
@@ -411,6 +406,7 @@ function gerarProposta() {
         console.log("Erro:", error)
 
     })
+   
   
     nomeResumo.textContent = proposta.nome
     celularResumo.textContent = proposta.celular
