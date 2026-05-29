@@ -269,10 +269,10 @@ function propostaTeste(){
         return "Não"
     }
 }
-function localizacao(){
+function canalTeste(){
 
     const campoTeste = document.getElementById('teste-proposta')
-    const campoLocalizacao = document.getElementById('input-cidade')
+    const campoLocalizacao = document.getElementById('canal-teste')
     if( campoTeste.checked) {
 
         return "Teste"
