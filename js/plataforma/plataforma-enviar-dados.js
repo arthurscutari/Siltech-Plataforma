@@ -97,7 +97,7 @@ function gerarProposta(e) {
         celular:celularPlataforma.value,
         canal:canalPlataforma.value,
         teste:propostaTeste(),
-        localizacao:localizacaoPlataforma.value,
+        localizacao:localizacao(),
         instalacao:instalacaoPlataforma.value,
         telhado:telhadoPlataforma.value,
         area:Number(quantidadePlaca.textContent * 3),

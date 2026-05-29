@@ -269,3 +269,15 @@ function propostaTeste(){
         return "Não"
     }
 }
+function localizacao(){
+
+    const campoTeste = document.getElementById('teste-proposta')
+    const campoLocalizacao = document.getElementById('input-cidade')
+    if( campoTeste.checked) {
+
+        return "Teste"
+    }
+    else {
+        return campoLocalizacao.value
+    }
+}
