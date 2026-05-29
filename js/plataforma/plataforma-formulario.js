@@ -74,3 +74,12 @@ if (usuarioAtivo === '4') {
     nomeColaborador.textContent = "SDR"
 
 }
+
+const divCanal = document.getElementById('div-canal-vendas')
+const checar = document.getElementById('teste-proposta')
+
+
+
+checar.addEventListener('click', () => {
+    divCanal.classList.toggle('hidden')
+})

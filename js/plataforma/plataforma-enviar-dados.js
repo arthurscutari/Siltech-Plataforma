@@ -96,7 +96,6 @@ function gerarProposta(e) {
         nome:nomePlataforma.value,
         celular:celularPlataforma.value,
         canal:canalPlataforma.value,
-        teste:propostaTeste(),
         localizacao:localizacao(),
         instalacao:instalacaoPlataforma.value,
         telhado:telhadoPlataforma.value,
@@ -124,7 +123,7 @@ function gerarProposta(e) {
     }
     localStorage.setItem('proposta', JSON.stringify(proposta))
     //Código para enviar os dados para o BD
-      fetch("https://script.google.com/macros/s/AKfycbyFmuY-oNvdL4lxxqkfTtCuaVuaYhGjyW_KBQvXLshtX-RJcmWnYWinyik2JA7yAXeNaQ/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbyYL5nB94W8OVJGVrDXBwhcqhxYXXcRS15m6fwFsIT2V-Al5CH974qcAKSIkwqR51c/exec", {
 
         method: "POST",
         mode: "no-cors",

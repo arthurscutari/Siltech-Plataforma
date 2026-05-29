@@ -24,7 +24,9 @@ const valorEconomiaProposta = document.getElementById('valor-economia-proposta')
 const retornoInvestimentoProposta = document.getElementById('retorno-investimeto-proposta')
 const nomeAssinaturaProposta = document.getElementById('nome-assinatura-proposta')
 const qtdPlacasModuloProposta = document.getElementById('placas-modulo-proposta');
+const dataProposta = document.getElementById('data-proposta');
 
+dataProposta.textContent = new Date().toLocaleDateString('pt-BR'),
 nomeAssinaturaProposta.textContent = proposta.nome
 nomeProposta.textContent = proposta.nome + ","
 localProposta.textContent = proposta.localizacao + " - SP"
