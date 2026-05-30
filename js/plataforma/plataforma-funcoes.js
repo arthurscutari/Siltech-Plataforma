@@ -272,7 +272,7 @@ function propostaTeste(){
 function canalTeste(){
 
     const campoTeste = document.getElementById('teste-proposta')
-    const campoLocalizacao = document.getElementById('canal-teste')
+    const campoLocalizacao = document.getElementById('canal-proposta')
     if( campoTeste.checked) {
 
         return "Teste"
@@ -280,4 +280,24 @@ function canalTeste(){
     else {
         return campoLocalizacao.value
     }
+}
+function calcularPotencia () {
+
+    const energiaGenarada = document.getElementById('modulo-proposta')
+      if (energiaGenarada.value === '575Wp Tier 1'){
+       return energia = 575
+      }
+      if (energiaGenarada.value === '585Wp Tier 1'){
+
+       return energia = 585
+      }
+      if (energiaGenarada.value === '610Wp Tier 1'){
+
+      return energia = 610
+      }
+      if (energiaGenarada.value === '700Wp Tier 1'){
+
+      return energia = 700
+      }
+
 }

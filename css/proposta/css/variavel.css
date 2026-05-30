@@ -146,6 +146,25 @@
     color: #083f7a;
 
 }
+.p-cartaoCredito {
+
+  position: relative; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 375px;
+    left: 5px;
+    color: #083f7a;
+    font-weight: 700;
+    font-size: 14pt;
+    border: 2px solid #083f7a;
+    height: 45px;
+    border-radius: 5px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .hidden {
     display: none;

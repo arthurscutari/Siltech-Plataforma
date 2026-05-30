@@ -25,6 +25,7 @@ const retornoInvestimentoProposta = document.getElementById('retorno-investimeto
 const nomeAssinaturaProposta = document.getElementById('nome-assinatura-proposta')
 const qtdPlacasModuloProposta = document.getElementById('placas-modulo-proposta');
 const dataProposta = document.getElementById('data-proposta');
+const kitProposta = document.getElementById('kit-proposta');
 
 dataProposta.textContent = new Date().toLocaleDateString('pt-BR'),
 nomeAssinaturaProposta.textContent = proposta.nome
@@ -102,3 +103,4 @@ function mostrarInversor()
 
     
 }
+kitProposta.textContent = proposta.kitPlaca / 1000 + "kWp";

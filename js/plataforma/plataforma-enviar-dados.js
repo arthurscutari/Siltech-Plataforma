@@ -117,8 +117,8 @@ function gerarProposta(e) {
         economiaAnual:economiaAnual(),
         economia:economiaAnual() * 15,
         valorFinal: custoFinalProposta(),
-        energiaGerada:geracaoEnergia()
-
+        energiaGerada:geracaoEnergia(),
+        kitPlaca: calcularPotencia() * Number(qtdPlacas.textContent)
 
     }
     localStorage.setItem('proposta', JSON.stringify(proposta))
