@@ -115,7 +115,7 @@ function gerarProposta(e) {
         valorSemSiltech: valorEnergiaSemSiltech(),
         valorComSiltech: solucao(),
         economiaAnual:economiaAnual(),
-        economia:economiaAnual() * 15,
+        economia:lucroQuinze(),
         valorFinal: custoFinalProposta(),
         energiaGerada:geracaoEnergia(),
         kitPlaca: calcularPotencia() * Number(qtdPlacas.textContent)
@@ -159,7 +159,7 @@ function gerarProposta(e) {
     currency: 'BRL' });
     economiaUm.textContent = proposta.economiaAnual.toLocaleString('pt-BR', {
      style: 'currency',currency: 'BRL'});
-    economiaQuinzeAnual.textContent = (proposta.economiaAnual * 15).toLocaleString('pt-BR', {
+    economiaQuinzeAnual.textContent = proposta.economia.toLocaleString('pt-BR', {
      style: 'currency', currency: 'BRL'});
     geracaoEnergiaResumo.textContent = proposta.energiaGerada.toFixed(2)
 
