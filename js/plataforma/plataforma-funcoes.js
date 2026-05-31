@@ -112,21 +112,21 @@ function custoEquipamento() {
 
         let valorPlaca = 825
         return {
-        valorTotal: inversor3kw + (valorPlaca * placaTotal),
+        valorTotal: inversor3kw + (valorPlaca * quantidadePlaca.textContent),
         potenciaTotal: potencia3kw,
         inversor:"1x 3kw"
         }
     }
-     if (placaTotal >= 9 && placaTotal <= 15) {
+    if (placaTotal >= 9 && placaTotal <= 15) {
 
         let valorPlaca = 800
         return {
-        valorTotal: inversor6kw + (valorPlaca * placaTotal),
+        valorTotal: inversor6kw + (valorPlaca * quantidadePlaca.textContent),
         potenciaTotal: potencia6kw,
         inversor:"1x 6kw"
         }
     }
-    if (quantidadePlaca.textContent >= 16 && quantidadePlaca.textContent <= 23) {
+    if (placaTotal >= 16 && placaTotal <= 23) {
 
          let valorPlaca = 775
         return {
@@ -135,7 +135,7 @@ function custoEquipamento() {
         inversor:"1x 6kw + 1x 3kw"
         }
     }
-    if (quantidadePlaca.textContent >= 24 && quantidadePlaca.textContent <= 30) {
+    if (placaTotal >= 24 && placaTotal <= 30) {
 
         let valorPlaca = 750
         return {
@@ -145,7 +145,7 @@ function custoEquipamento() {
         }
 
     }
-    if (quantidadePlaca.textContent >= 31 && quantidadePlaca.textContent <= 45) {
+    if (placaTotal >= 31 && placaTotal <= 45) {
 
          let valorPlaca = 750
         return {
@@ -154,7 +154,7 @@ function custoEquipamento() {
         inversor:"3x 6kw"
     }
     }
-    if (quantidadePlaca.textContent >= 46 && quantidadePlaca.textContent <= 60) {
+    if (placaTotal >= 46 && placaTotal <= 60) {
 
         let valorPlaca = 750
         return {

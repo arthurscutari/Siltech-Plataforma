@@ -27,7 +27,6 @@ const qtdPlacasModuloProposta = document.getElementById('placas-modulo-proposta'
 const dataProposta = document.getElementById('data-proposta');
 const kitProposta = document.getElementById('kit-proposta');
 
-dataProposta.textContent = new Date().toLocaleDateString('pt-BR'),
 nomeAssinaturaProposta.textContent = proposta.nome
 nomeProposta.textContent = proposta.nome + ","
 localProposta.textContent = proposta.localizacao + " - SP"
@@ -104,3 +103,14 @@ function mostrarInversor()
     
 }
 kitProposta.textContent = proposta.kitPlaca / 1000 + "kWp";
+
+
+function dataPorExtenso(data = new Date()) {
+    return data.toLocaleDateString('pt-BR', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+    });
+}
+
+dataProposta.textContent = dataPorExtenso();
