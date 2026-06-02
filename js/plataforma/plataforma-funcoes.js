@@ -98,8 +98,8 @@ function custoEstrutura(){
 }
 function custoEquipamento() {
 
-    const inversor3kw = 1800
-    const inversor6kw = 2800
+    const inversor3kw = 1450
+    const inversor6kw = 2450
 
     const potencia3kw = 3
     const potencia6kw = 6
@@ -147,7 +147,7 @@ function custoEquipamento() {
     }
     if (placaTotal >= 31 && placaTotal <= 45) {
 
-         let valorPlaca = 750
+         let valorPlaca = 725
         return {
         valorTotal: (inversor6kw * 3) + (valorPlaca * quantidadePlaca.textContent),
         potenciaTotal: potencia6kw *3,
@@ -156,7 +156,7 @@ function custoEquipamento() {
     }
     if (placaTotal >= 46 && placaTotal <= 60) {
 
-        let valorPlaca = 750
+        let valorPlaca = 700
         return {
         valorTotal: (inversor6kw * 4) + (valorPlaca * quantidadePlaca.textContent),
         potenciaTotal: potencia6kw *4,
@@ -255,7 +255,7 @@ function valorEnergiaSemSiltech () {
 }
 function custoFinalProposta () {
     
-    return custoMercadoriaVendida() /( 1 -(0.42 + deducaoImposto + comissaoVenda))
+    return custoMercadoriaVendida() /( 1 -(contribuicao + deducaoImposto + comissaoVenda))
 } 
 function propostaTeste(){
 

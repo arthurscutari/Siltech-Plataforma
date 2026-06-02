@@ -12,3 +12,20 @@
 
     display: none;
 }
+.ajuda-container {
+
+    z-index: 999;
+    position: relative;
+    height: 80px;
+    width: 240px;
+}
+
+.selecionado {
+
+    background-color: white;
+}
+.selecionadoTag {
+
+    color:  #273c75;
+    
+}

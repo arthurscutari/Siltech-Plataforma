@@ -16,21 +16,33 @@ botaoAcessar.addEventListener('click', (e) =>
 
     window.location.href = "plataforma.html"
 }
-   else if(usuario.value === "gabrielsato" && senha.value === "admin123") {
+   else if(usuario.value === "alex@siltechsolar.com.br" && senha.value === "admin123") {
 
     localStorage.setItem('usuarioAtivo', '2')
 
     window.location.href = "plataforma.html"
 }
-   else if(usuario.value === "alefferreira" && senha.value === "sdr012026") {
+else if(usuario.value === "pedro@siltechsolar.com.br" && senha.value === "admin123") {
 
     localStorage.setItem('usuarioAtivo', '3')
 
     window.location.href = "plataforma.html"
 }
-   else if(usuario.value === "pedrobrito" && senha.value === "sdr022026") {
+else if(usuario.value === "gabriel.sato@siltechsolar.com.br" && senha.value === "admin123") {
 
     localStorage.setItem('usuarioAtivo', '4')
+
+    window.location.href = "plataforma.html"
+}
+   else if(usuario.value === "alaf.ferreira@siltechsolar.com.br" && senha.value === "sdr012026") {
+
+    localStorage.setItem('usuarioAtivo', '5')
+
+    window.location.href = "plataforma.html"
+}
+   else if(usuario.value === "pedro.brito@siltechsolar.com.br" && senha.value === "sdr022026") {
+
+    localStorage.setItem('usuarioAtivo', '6')
 
     window.location.href = "plataforma.html"
 }

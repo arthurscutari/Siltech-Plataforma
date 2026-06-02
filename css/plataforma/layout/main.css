@@ -4,7 +4,8 @@
     flex: 1;
     background-color: white;
 }
-.section-proposta-plataforma{
+.section-proposta-plataforma,
+.section-historico-plataforma{
 
     display: flex;
     flex: 1;
@@ -77,3 +78,9 @@
     background-color: rgba(63, 109, 236, 0.116)
 }
 
+.historico-plataforma {
+
+   
+    width: 100%;
+    height: 90%;
+}

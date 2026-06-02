@@ -1,6 +1,6 @@
 //Custos fixos.
 const deducaoImposto = 0.06
-const contribuição = 0.42
+const contribuicao = 0.37
 const comissaoVenda = 0.05
 const taxaCartão = 0
 const inflacao = 0.1
@@ -29,7 +29,7 @@ consumoPlaca.addEventListener(
 
 const qtdPlacas = document.getElementById('quantidade-placa-proposta')
 const hsp = document.getElementById('input-hsp')
-const colaboradorAtivo = document.getElementById('usuario-ativo')
+const colaboradorAtivo = document.querySelectorAll('usuario-ativo')
 
 
 

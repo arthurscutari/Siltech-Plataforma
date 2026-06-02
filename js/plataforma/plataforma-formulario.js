@@ -40,41 +40,46 @@ expansao.addEventListener("change", function () {
 
 })
 
+const usuarios = {
+    1: {
+        nome: 'Arthur Alvarez',
+        cargo: 'Desenvolvedor'
+    },
+    2: {
+        nome: 'Alex Coelho',
+        cargo: 'Diretor Comercial'
+    },
+    3: {
+        nome: 'Pedro Henrique',
+        cargo: 'Diretor Operacional'
+    },
+    4: {
+        nome: 'Gabriel Sato',
+        cargo: 'Diretor Administrativo / Financeiro'
+    },
+    5: {
+        nome: 'Alef Ferreira',
+        cargo: 'SDR'
+    },
+    6: {
+        nome: 'Pedro Brito',
+        cargo: 'SDR'
+    }
+}
+
 const usuarioAtivo = localStorage.getItem('usuarioAtivo')
 
-const nomeUsuario = document.getElementById('usuario-ativo')
+const usuario = usuarios[usuarioAtivo]
 
-const nomeColaborador = document.getElementById('colaborador-ativo')
+if (usuario) {
 
-if (usuarioAtivo === '1') {
+    document.querySelectorAll('.usuario-ativo')
+        .forEach(el => el.textContent = usuario.nome)
 
-    nomeUsuario.textContent = "Arthur Alvarez"
-
-    nomeColaborador.textContent = "Programador"
-
-}
-if (usuarioAtivo === '2') {
-
-    nomeUsuario.textContent = "Gabriel Sato"
-
-    nomeColaborador.textContent = "Administrador"
+    document.querySelectorAll('.colaborador-ativo')
+        .forEach(el => el.textContent = usuario.cargo)
 
 }
-if (usuarioAtivo === '3') {
-
-    nomeUsuario.textContent = "Alef Ferreira"
-
-    nomeColaborador.textContent = "SDR"
-
-}
-if (usuarioAtivo === '4') {
-
-    nomeUsuario.textContent = "Pedro Brito"
-
-    nomeColaborador.textContent = "SDR"
-
-}
-
 const divCanal = document.getElementById('div-canal-vendas')
 const checar = document.getElementById('teste-proposta')
 

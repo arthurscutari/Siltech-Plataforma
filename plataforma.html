@@ -29,18 +29,21 @@
         </div>
       </div>
       <nav class="nav-sidebar-plataforma">
-        <!-- <div class="card-nav-plataforma nav-proposta">
-            <i class="bi bi-house icon branco"></i>
-            <p class="p-nav-plataforma branco">Inicio</p>
-          </div> -->
-        <div class="card-nav-plataforma nav-proposta item-selecionado">
-          <i class="bi bi-clipboard icon branco"></i>
-          <p class="p-nav-plataforma branco">Proposta</p>
+        <div style="width: 100%;   display: flex; align-items: center; gap: 20px; flex-direction: column;">
+          <div class="card-nav-plataforma nav-proposta selecionado" id="div-proposta">
+              <i class="bi bi-clipboard icon branco selecionadoTag" id="icon-proposta-nav"></i>
+              <p class="p-nav-plataforma branco selecionadoTag" id="text-proposta-nav">Proposta</p>
+            </div>
+          <div class="card-nav-plataforma nav-proposta " id="div-dashboard">
+              <i class="bi bi-graph-up-arrow icon branco " id="icon-dashboard-nav"></i>
+              <p class="p-nav-plataforma branco " id="text-dashboard-nav">Histórico</p>
+            </div>
+            
+          <!-- <div class="card-nav-plataforma nav-proposta">
+                <i class="bi bi-clock-history icon branco"></i>
+                <p class="p-nav-plataforma branco">Hstórico</p>
+              </div> -->
         </div>
-        <!-- <div class="card-nav-plataforma nav-proposta">
-            <i class="bi bi-clock-history icon branco"></i>
-            <p class="p-nav-plataforma branco">Hstórico</p>
-          </div> -->
         <div class="card-nav-plataforma nav-proposta" id="btn-sair-plataforma">
           <i class="bi bi-box-arrow-left icon branco"></i>
           <p class="p-nav-plataforma branco">Sair</p>
@@ -48,13 +51,28 @@
       </nav>
     </sidebar>
     <main class="main-plataforma">
-      <section class="section-proposta-plataforma">
+      <section class="section-historico-plataforma hidden" id="container-dashboard">
+          <div class="cabecalho-plataforma">
+          <h2 class="h2-plataforma">Histórico</h2>
+          <div class="cabecalho-user">
+            <div class="cabecalho-user-text">
+              <h3 class="h3-user usuario-ativo">Arthur Alvarez</h3>
+              <p class="p-user colaborador-ativo">Vendedor</p>
+            </div>
+            <i class="bi bi-person user-icon"></i>
+          </div>
+        </div>
+        <div class="historico-plataforma">
+
+        </div>
+      </section>
+      <section class="section-proposta-plataforma" id="container-proposta">
         <div class="cabecalho-plataforma">
           <h2 class="h2-plataforma">Proposta Comercial</h2>
           <div class="cabecalho-user">
             <div class="cabecalho-user-text">
-              <h3 class="h3-user" id="usuario-ativo">Arthur Alvarez</h3>
-              <p class="p-user" id="colaborador-ativo">Vendedor</p>
+              <h3 class="h3-user usuario-ativo">Arthur Alvarez</h3>
+              <p class="p-user colaborador-ativo">Vendedor</p>
             </div>
             <i class="bi bi-person user-icon"></i>
           </div>
@@ -280,8 +298,9 @@
 
           </div>
         </div>
-        </div>
+    
       </section>
+      
     </main>
   </section>
   <script src="js/plataforma/plataforma-funcoes.js"></script>
