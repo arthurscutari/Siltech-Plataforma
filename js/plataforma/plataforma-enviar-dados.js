@@ -29,7 +29,7 @@ consumoPlaca.addEventListener(
 
 const qtdPlacas = document.getElementById('quantidade-placa-proposta')
 const hsp = document.getElementById('input-hsp')
-const colaboradorAtivo = document.querySelectorAll('usuario-ativo')
+const colaboradorAtivo = document.getElementById('usuario-ativo')
 
 
 
