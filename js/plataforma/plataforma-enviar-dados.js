@@ -143,7 +143,6 @@ function gerarProposta(e) {
         console.log("Erro:", error)
 
     })
-   console.log(nomeResumo)
 
   
     nomeResumo.textContent = proposta.nome

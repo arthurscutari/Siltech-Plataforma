@@ -77,7 +77,7 @@ function economiaAnual() {
 } 
 function custoMercadoriaVendida() {
 
-    return (custoEquipamento().valorTotal + custoEstrutura() + custoHomologacao() + custoInstalacao() + custoRetorno )
+    return (Number(custoEquipamento().valorTotal + custoEstrutura() + custoHomologacao() + custoInstalacao() + custoRetorno ) + (custoExpansao()))
 }
 function custoEstrutura(){
 
@@ -300,4 +300,16 @@ function calcularPotencia () {
       return energia = 700
       }
 
+}
+function custoExpansao() {
+        const quantidadeExpansao = document.getElementById('qtd-expansao-proposta')
+
+        if (quantidadeExpansao > 0 ) {
+
+            return 1000
+        }
+        else {
+
+            return 0
+        }
 }
