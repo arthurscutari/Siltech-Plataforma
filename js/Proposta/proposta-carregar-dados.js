@@ -96,13 +96,13 @@ function mostrarInversor()
     }
     if (proposta.inversor === "4x 6kw") {
 
-        return "014 inversores Huawei - 6kW"
+        return "04 inversores Huawei - 6kW"
     }
     
 
     
 }
-kitProposta.textContent = proposta.kitPlaca / 1000 + "kWp";
+kitProposta.textContent = (proposta.kitPlaca / 1000).toFixed(2) + "kWp";
 
 
 function dataPorExtenso(data = new Date()) {

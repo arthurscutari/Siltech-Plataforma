@@ -79,23 +79,7 @@ function custoMercadoriaVendida() {
 
     return (Number(custoEquipamento().valorTotal + custoEstrutura() + custoHomologacao() + custoInstalacao() + custoRetorno ) + (custoExpansao()))
 }
-function custoEstrutura(){
 
-    if (telhadoPlataforma.value === "Cerâmico") {
-        return 0
-    }
-    if (telhadoPlataforma.value === "Fibrocimento") {
-        return 0
-    }
-    if (telhadoPlataforma.value === "Laje") {
-
-        return 3000
-    }
-    if (telhadoPlataforma.value ===  "Metálico") {
-        return 0
-    }
-
-}
 function custoEquipamento() {
 
     const inversor3kw = 1450
@@ -312,4 +296,17 @@ function custoExpansao() {
 
             return 0
         }
+}
+
+function promocao() {
+
+    const campoPromocao = document.getElementById('promocao-proposta')
+    if ( campoPromocao === "" || campoPromocao == 0) {
+
+        return 0
+    }
+    else {
+
+        return campoPromocao.value
+    }
 }
